@@ -24,27 +24,7 @@
     color: $color;
 }
 
-// Components
-@mixin hr-heading($color: black) {
-    border: 0.35rem $color solid;
-    width: 8vw;
-    opacity: 0.8;
-}
-
 // Style
 @mixin mask-dark($opacity: 0.15) {
     background-color: rgba(0, 0, 0, $opacity);
-}
-
-// Animation
-@mixin nav-item-border
-{
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 6px;
-    left: 0%;
-    bottom: 0;
-    background-color: $secondary-dark;
-    transition: all ease-in-out .2s;
 }

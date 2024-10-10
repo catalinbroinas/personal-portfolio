@@ -9,10 +9,6 @@
 // MDBootstrap
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
-body {
-    background-color: $primary-light;
-}
-
 // Typography
 .title
 {
@@ -25,72 +21,4 @@ body {
 .text
 {
    @include text;
-}
-
-// Navbar
-.navbar
-{
-   background-color: $primary-main;
-   padding: 0.5rem 0 0;
-   .navbar-toggler
-   {
-      color: $secondary-dark;
-      padding: 1rem;
-   }
-   .navbar-brand
-   {
-      padding: 1rem;
-      position: relative;
-   }
-   .navbar-brand::after
-   {
-      @include nav-item-border;
-      left: 50%;
-   }
-   .navbar-brand:hover::after
-   {
-      width: 100%;
-      left: 0;
-   }
-   .navbar-title
-   {
-      @include title(1.5rem);
-      color: $secondary-dark;
-   }
-   .navbar-nav
-   {
-      padding: 0;
-   }
-   .nav-item
-   {
-      padding: 0;
-      margin: 0 3rem 0 0;
-   }
-   .nav-link
-   {
-      @include sub-title(1.25rem);
-      padding: 1rem;
-      position: relative;
-   }
-   .nav-link::after
-   {
-      @include nav-item-border;
-   }
-   .nav-link:hover::after
-   {
-      width: 100%;
-      left: 0;
-   }
-   @media screen and (max-width: 991px) 
-   {
-      .navbar-title
-      {
-         display: block;
-         margin: auto;
-      }
-      .nav-item
-      {
-         text-align: center;
-      }
-   }
 }
