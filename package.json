@@ -1,0 +1,23 @@
+{
+  "name": "mdbootstrap-5-vite",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.4",
+    "vite": "^5.4.8",
+    "vite-plugin-imagemin": "^0.6.1"
+  },
+  "dependencies": {
+    "mdb-ui-kit": "^8.0.0"
+  }
+}
