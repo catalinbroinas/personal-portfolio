@@ -1,10 +1,10 @@
 import '../scss/main.scss';
 
-import { Ripple, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
+import { Ripple, Carousel, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 function MainDomManager() {
     const initApp = () => {
-        initMDB({ Ripple });
+        initMDB({ Ripple, Carousel });
     };
 
     return { initApp };

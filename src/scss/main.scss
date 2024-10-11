@@ -10,6 +10,17 @@
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
 // Typography
+body {
+   font-family: "Roboto", Arial, Verdana, sans-serif;
+}
+
+.font-title {
+   font-family: $font-title;
+}
+.font-text {
+   font-family: $font-text;
+}
+
 .title
 {
    @include title;
@@ -21,4 +32,19 @@
 .text
 {
    @include text;
+}
+
+// Intro
+.intro {
+   .hr-intro {
+      height: 2px;
+      width: 200px;
+   }
+   .custom-indicator {
+      width: 12px;
+      height: 12px;
+   }
+   .custom-border-radius {
+      border-bottom-left-radius: 4rem;
+   }
 }
