@@ -9,11 +9,13 @@
 // MDBootstrap
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
-// Typography
+// Body style
 body {
    font-family: "Roboto", Arial, Verdana, sans-serif;
+   background-color: $primary-main;
 }
 
+// Typography
 .font-title {
    font-family: $font-title;
 }
@@ -40,11 +42,31 @@ body {
       height: 2px;
       width: 200px;
    }
+   .avatar-intro {
+      width: 200px;
+      height: 200px;
+   }
    .custom-indicator {
       width: 12px;
       height: 12px;
    }
    .custom-border-radius {
       border-bottom-left-radius: 4rem;
+   }
+}
+
+// Style
+.fa-github {
+   color: #333333;
+
+   &:hover {
+      color: $primary-dark;
+   }
+}
+.fa-linkedin {
+   color: #0082ca;
+
+   &:hover {
+      color: $primary-dark;
    }
 }
