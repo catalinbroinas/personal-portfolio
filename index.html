@@ -69,7 +69,7 @@
               <hr class="hr hr-intro d-none d-xl-flex" />
 
               <a
-                class="btn btn-primary btn-lg btn-rounded"
+                class="btn btn-primary btn-lg btn-rounded d-none d-lg-inline-block"
                 style="background-color: #2962ff"
                 href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
                 target="_blank"
@@ -77,13 +77,21 @@
                 data-mdb-ripple-init
                 >Discover my progress</a
               >
+              <a
+                class="btn btn-primary btn-lg btn-rounded d-lg-none"
+                style="background-color: #2962ff"
+                href="#story"
+                role="button"
+                data-mdb-ripple-init
+                >Discover my story</a
+              >
             </div>
             <!-- Call to action -->
           </div>
           <!-- First Column -->
 
           <!-- Second Column -->
-          <div class="col-lg-6 d-none d-lg-inline-block vh-100">
+          <div id="story" class="col-lg-6 vh-100">
             <!-- Carousel wrapper -->
             <div
               id="intro-carousel"
