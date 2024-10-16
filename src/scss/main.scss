@@ -36,6 +36,16 @@ body {
    @include text;
 }
 
+.card-title {
+   @include custom-text($font-title, 700, 1.35rem, $secondary-dark);
+}
+.card-sub-title {
+   @include custom-text($font-text, 600, 1.15rem, $secondary-main);
+}
+.card-text {
+   @include custom-text($font-text, 400, 1rem, $secondary-main);
+}
+
 // Intro
 .intro {
    .hr-intro {
