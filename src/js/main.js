@@ -1,6 +1,6 @@
 import '../scss/main.scss';
 
-import { Ripple, Carousel, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
+import { Ripple, Carousel, Modal, initMDB, } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 function MainDomManager() {
     const setupCarousel = () => {
@@ -34,6 +34,7 @@ function MainDomManager() {
     const initApp = () => {
         initMDB({ Ripple, Carousel });
         setupCarousel();
+        initMDB({ Modal });
     };
 
     return { initApp };
