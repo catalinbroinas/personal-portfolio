@@ -30,6 +30,19 @@
 }
 
 // Components
+@mixin btn-primary-blue {
+    background-color: $primary-dark;
+    color: white;
+
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $primary-dark;
+        color: white;
+    }
+}
+
 @mixin btn-social-media($bg-color) {
     background-color: $bg-color;
     color: white;
@@ -57,4 +70,20 @@
 
 @mixin btn-linkedin {
     @include btn-social-media(#0082ca);
+}
+
+@mixin icon-social-media($color) {
+    color: $color;
+
+    &:hover,
+    &:active {
+        color: $primary-dark;
+    }
+}
+
+@mixin icon-github {
+    @include icon-social-media(#333333);
+}
+@mixin icon-linkedin {
+    @include icon-social-media(#0082ca);
 }

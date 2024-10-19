@@ -48,21 +48,6 @@ body {
 
 // Intro
 .intro {
-   .fa-github {
-      color: #333333;
-   
-      &:hover {
-         color: $primary-dark;
-      }
-   }
-   .fa-linkedin {
-      color: #0082ca;
-   
-      &:hover {
-         color: $primary-dark;
-      }
-   }
-
    .hr-intro {
       height: 2px;
       width: 200px;
@@ -86,11 +71,28 @@ body {
 }
 
 // Components
-.modal {
-   .custom-indicator {
-      width: 9px;
-      height: 9px;
-   }
+.btn.btn-primary-blue {
+   @include btn-primary-blue;
+}
+
+.btn.btn-facebook {
+   @include btn-facebook;
+}
+ .btn.btn-instagram {
+   @include btn-instagram;
+}
+ .btn.btn-linkedin {
+   @include btn-linkedin;
+} 
+ .btn.btn-gitHub {
+   @include btn-github;
+}
+
+ .icon-gitHub {
+   @include icon-github;
+}
+ .icon-linkedin {
+   @include icon-linkedin;
 }
 
 .card-ice {
@@ -103,27 +105,17 @@ body {
    width: 240px;
 }
 
+.modal {
+   .custom-indicator {
+      width: 9px;
+      height: 9px;
+   }
+}
+
 // Style
-.btn.btn-facebook {
-  @include btn-facebook;
-}
-
-.btn.btn-instagram {
-   @include btn-instagram;
-}
-
-.btn.btn-linkedin {
-   @include btn-linkedin;
-}
-
-.btn.btn-gitHub {
-   @include btn-github;
-}
-
 .mask-light-dark {
    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
-
 .mask-dark {
    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 }
@@ -135,7 +127,7 @@ body {
    opacity: 1;
 }
 
-.technology-icon {
+.color-blue {
    color: $secondary-dark;
 }
 
