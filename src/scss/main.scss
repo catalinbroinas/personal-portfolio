@@ -48,6 +48,21 @@ body {
 
 // Intro
 .intro {
+   .fa-github {
+      color: #333333;
+   
+      &:hover {
+         color: $primary-dark;
+      }
+   }
+   .fa-linkedin {
+      color: #0082ca;
+   
+      &:hover {
+         color: $primary-dark;
+      }
+   }
+
    .hr-intro {
       height: 2px;
       width: 200px;
@@ -89,19 +104,20 @@ body {
 }
 
 // Style
-.fa-github {
-   color: #333333;
-
-   &:hover {
-      color: $primary-dark;
-   }
+.btn.btn-facebook {
+  @include btn-facebook;
 }
-.fa-linkedin {
-   color: #0082ca;
 
-   &:hover {
-      color: $primary-dark;
-   }
+.btn.btn-instagram {
+   @include btn-instagram;
+}
+
+.btn.btn-linkedin {
+   @include btn-linkedin;
+}
+
+.btn.btn-gitHub {
+   @include btn-github;
 }
 
 .mask-light-dark {
