@@ -23,7 +23,7 @@
         <div class="row g-0">
           <!-- First Column -->
           <div
-            class="col-lg-6 d-flex flex-column justify-content-center align-items-center vh-100"
+            class="col-xl-6 col-12 d-flex flex-column justify-content-center align-items-center vh-100"
           >
             <!-- Text -->
             <div class="h-100 d-flex justify-content-center align-items-center">
@@ -43,10 +43,10 @@
 
             <!-- Call to action -->
             <div
-              class="d-flex w-100 justify-content-between align-items-center px-5 mb-5"
+              class="d-flex w-100 flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center px-5 mb-5"
             >
               <!-- Social Media -->
-              <div>
+              <div class="mb-sm-0 mb-3">
                 <a
                   href="https://github.com/catalinbroinas"
                   target="_blank"
@@ -69,7 +69,7 @@
               <hr class="hr hr-intro d-none d-xl-flex" />
 
               <a
-                class="btn btn-primary-blue btn-lg btn-rounded d-none d-lg-inline-block"
+                class="btn btn-primary-blue btn-lg btn-rounded d-none d-xl-inline-block"
                 href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
                 target="_blank"
                 role="button"
@@ -77,11 +77,13 @@
                 >Discover my progress</a
               >
               <a
-                class="btn btn-primary-blue btn-lg btn-rounded d-lg-none"
+                class="btn btn-primary-blue btn-lg btn-rounded d-xl-none"
                 href="#story"
                 role="button"
                 data-mdb-ripple-init
-                >Discover my story</a
+                data-mdb-modal-init
+                data-mdb-target="#journey"
+                >Discover my journey</a
               >
             </div>
             <!-- Call to action -->
@@ -89,7 +91,7 @@
           <!-- First Column -->
 
           <!-- Second Column -->
-          <div id="story" class="col-lg-6 vh-100">
+          <div id="story" class="col-lg-6 d-none d-xl-block vh-100">
             <!-- Carousel wrapper -->
             <div
               id="intro-carousel"
@@ -294,6 +296,221 @@
         <!-- Grid Row -->
       </section>
       <!-- Intro -->
+
+      <!-- Intro: modal -->
+      <section>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="journey"
+          tabindex="-1"
+          data-mdb-backdrop="true"
+          aria-labelledby="journey-label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen-xl-down">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h5 class="modal-title title" id="journey-label">My Journey</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-mdb-ripple-init
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Modal Header -->
+
+              <!-- Modal Body -->
+              <div class="modal-body">
+                <!-- Container -->
+                <div class="container">
+                  <!-- Grid Row -->
+                  <div class="row">
+                    <!-- Column -->
+                    <div class="col-12 mb-5">
+                      <!-- Item 1 -->
+                      <div class="d-flex align-items-start mb-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                            <i
+                              class="fa-solid fa-play text-white fa-lg fa-fw"
+                            ></i>
+                          </div>
+                        </div>
+                        <!-- Icon -->
+
+                        <!-- Text -->
+                        <div class="flex-grow-1 ms-4">
+                          <h3 class="sub-title mb-1">
+                            Passion for web development
+                          </h3>
+                          <p class="text mb-0">
+                            It all started in October 2018 with an internship.
+                            That’s when I decided to build a website for my
+                            undergraduate project, and I did!
+                          </p>
+                        </div>
+                        <!-- Text -->
+                      </div>
+                      <!-- Item 1 -->
+
+                      <!-- Item 2 -->
+                      <div class="d-flex align-items-start mb-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                            <i
+                              class="fa-solid fa-code text-white fa-lg fa-fw"
+                            ></i>
+                          </div>
+                        </div>
+                        <!-- Icon -->
+
+                        <!-- Text -->
+                        <div class="flex-grow-1 ms-4">
+                          <h3 class="sub-title mb-1">From hobby to career</h3>
+                          <p class="text mb-0">
+                            After completing my degree, I continued
+                            experimenting, fueled by my passion for learning and
+                            creating new projects. In 2023, I finally realized
+                            that web development is what I truly want to pursue
+                            for the rest of my life.
+                          </p>
+                        </div>
+                        <!-- Text -->
+                      </div>
+                      <!-- Item 2 -->
+
+                      <!-- Item 3 -->
+                      <div class="d-flex align-items-start mb-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                            <i
+                              class="fa-solid fa-plane text-white fa-lg fa-fw"
+                            ></i>
+                          </div>
+                        </div>
+                        <!-- Icon -->
+
+                        <!-- Text -->
+                        <div class="flex-grow-1 ms-4">
+                          <h3 class="sub-title mb-1">
+                            My Journey Through Web Development
+                          </h3>
+                          <p class="text mb-0">
+                            Initially, I built database-driven websites,
+                            fascinated by data processing. Later, I focused on
+                            designing user interfaces that sparked my
+                            creativity. Through The Odin Project courses, my
+                            direction became clearer, and each project helped me
+                            grow.
+                          </p>
+                        </div>
+                        <!-- Text -->
+                      </div>
+                      <!-- Item 3 -->
+
+                      <!-- Item 4 -->
+                      <div class="d-flex align-items-start mb-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                            <i
+                              class="fa-solid fa-trophy text-white fa-lg fa-fw"
+                            ></i>
+                          </div>
+                        </div>
+                        <!-- Icon -->
+
+                        <!-- Text -->
+                        <div class="flex-grow-1 ms-4">
+                          <h3 class="sub-title mb-1">My Achievements</h3>
+                          <p class="text mb-0">
+                            I’ve developed dozens of templates, 15 JavaScript
+                            applications, and 7 websites with databases. I’ve
+                            published my most relevant projects on GitHub,
+                            excluding personal ones. Since September 2023, I’ve
+                            been using Git and GitHub daily.
+                          </p>
+                        </div>
+                        <!-- Text -->
+                      </div>
+                      <!-- Item 4 -->
+
+                      <!-- Item 5 -->
+                      <div class="d-flex align-items-start mb-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                            <i
+                              class="fa-solid fa-location-dot text-white fa-lg fa-fw"
+                            ></i>
+                          </div>
+                        </div>
+                        <!-- Icon -->
+
+                        <!-- Text -->
+                        <div class="flex-grow-1 ms-4">
+                          <h3 class="sub-title mb-1">My Goal</h3>
+                          <p class="text mb-0">
+                            My goal is to grow and learn continuously, as
+                            perseverance and consistency are fundamental to
+                            success. I am looking to collaborate with a team
+                            where I can contribute and learn from innovative
+                            projects. The right environment and mindset lead to
+                            accelerated progress.
+                          </p>
+                        </div>
+                        <!-- Text -->
+                      </div>
+                      <!-- Item 5 -->
+
+                      <!-- CTA Button -->
+                      <div class="text-center">
+                        <a
+                          class="btn btn-primary-blue btn-lg btn-rounded"
+                          href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
+                          target="_blank"
+                          role="button"
+                          data-mdb-ripple-init
+                          >Discover my progress</a
+                        >
+                      </div>
+                      <!-- CTA Button -->
+                    </div>
+                    <!-- Column -->
+                  </div>
+                  <!-- Grid Row -->
+                </div>
+                <!-- Container -->
+              </div>
+              <!-- Modal Body -->
+
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-rounded"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="danger"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Close
+                </button>
+              </div>
+              <!-- Modal Footer -->
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+      </section>
+      <!-- Intro: modal -->
     </header>
     <!--Main Navigation-->
 
