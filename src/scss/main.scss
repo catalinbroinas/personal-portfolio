@@ -143,3 +143,12 @@ body {
    max-width: 80px;
    height: auto;
 }
+
+// Footer
+.footer {
+   background-color: $primary-light;
+
+   .footer-link {
+      color: $secondary-main;
+   }
+}
