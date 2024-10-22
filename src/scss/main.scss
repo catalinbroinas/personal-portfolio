@@ -159,6 +159,10 @@ body {
    height: auto;
 }
 
+.transposed {
+   transform: scaleX(-1);
+}
+
 // Footer
 .footer {
    background-color: $primary-light;
