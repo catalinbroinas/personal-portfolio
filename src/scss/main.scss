@@ -63,9 +63,25 @@ body {
    .custom-border-radius {
       border-bottom-left-radius: 4rem;
    }
+
+   // Medium devices
    @media only screen and (max-width: 991px) {
       .custom-border-radius {
          border-radius: 0;
+      }
+   }
+
+   // Small devices
+   @media only screen and (max-width: 767px) {
+      .avatar-intro {
+         width: 150px;
+         height: 150px;
+      }
+   }
+
+   @media only screen and (max-height: 499px) {
+      .avatar-intro {
+         display: none;
       }
    }
 }
