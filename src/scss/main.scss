@@ -158,6 +158,10 @@ body {
    background-color: $secondary-dark;
 }
 
+.bg-light-blue {
+   background-color: $primary-light;
+}
+
 .technology-image {
    max-width: 80px;
    height: auto;
@@ -165,13 +169,4 @@ body {
 
 .transposed {
    transform: scaleX(-1);
-}
-
-// Footer
-.footer {
-   background-color: $primary-light;
-
-   .footer-link {
-      color: $secondary-main;
-   }
 }
