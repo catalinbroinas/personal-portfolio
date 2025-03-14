@@ -3,9 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Catalin Broinas" />
+    <meta
+      name="description"
+      content="My web development portfolio showcasing projects, coding skills, and professional experience in frontend and backend development."
+    />
+    <meta
+      name="keywords"
+      content="web development, frontend, backend, full stack, HTML, CSS, JavaScript, Bootstrap, MDBootstrap, PHP, MySQL, Webpack, Vite, JSON, npm, Git, GitHub"
+    />
     <title>Personal Portfolio</title>
     <!-- Favicon -->
-    <link rel="icon" href="./assets/img/mdb-favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/img/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/img/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,10 +58,12 @@
               <div class="px-sm-5 px-3 text-center">
                 <img
                   src="./assets/img/my-avatar.JPG"
-                  alt="Cătălin Broinaș - profile picture"
+                  alt=""
                   class="avatar-intro rounded-circle shadow-5-strong border border-5 border-white mb-4"
                 />
+
                 <h2 class="font-title display-4">Cătălin Broinaș</h2>
+
                 <h1 class="font-title display-2 fw-bold text-uppercase">
                   Web developer
                 </h1>
@@ -53,23 +81,31 @@
                 <a
                   href="https://github.com/catalinbroinas"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="me-3"
+                  aria-label="GitHub profile"
                 >
                   <i class="fa-brands fa-github icon-gitHub fa-2x fa-fw"></i>
                 </a>
               </div>
               <!-- Social Media -->
 
-              <hr class="hr hr-intro d-none d-xl-flex" />
+              <hr
+                class="hr hr-intro d-none d-xl-flex"
+                role="separator"
+                aria-hidden="true"
+              />
 
               <a
                 class="btn btn-primary-blue btn-lg btn-rounded d-none d-xl-inline-block"
                 href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
                 target="_blank"
-                role="button"
+                rel="noopener noreferrer"
                 data-mdb-ripple-init
+                data-mdb-ripple-color="light"
                 >Discover my progress</a
               >
+
               <a
                 class="btn btn-primary-blue btn-lg btn-rounded d-xl-none"
                 href="#story"
@@ -77,6 +113,7 @@
                 data-mdb-ripple-init
                 data-mdb-modal-init
                 data-mdb-target="#journey"
+                data-mdb-ripple-color="light"
                 >Discover my journey</a
               >
             </div>
@@ -86,6 +123,8 @@
 
           <!-- Second Column -->
           <div id="story" class="col-lg-6 d-none d-xl-block vh-100">
+            <h2 class="visually-hidden">Story</h2>
+
             <!-- Carousel wrapper -->
             <div
               id="intro-carousel"
@@ -142,13 +181,15 @@
                     <img
                       src="./assets/img/laptop.jpg"
                       class="d-block vh-100 vw-100 object-cover"
-                      alt="A laptop on a desk"
+                      alt=""
                     />
+
                     <div class="mask mask-light-dark">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="sub-title text-white">
+                        <h3 class="sub-title text-white">
                           Passion for web development
-                        </h5>
+                        </h3>
+
                         <p class="text text-white">
                           It all started in October 2018 with an internship.
                           That’s when I decided to build a website for my
@@ -166,13 +207,15 @@
                     <img
                       src="./assets/img/road.jpg"
                       class="d-block vh-100 vw-100 object-cover"
-                      alt="Overpass"
+                      alt=""
                     />
+
                     <div class="mask mask-light-dark">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="sub-title text-white">
+                        <h3 class="sub-title text-white">
                           From hobby to career
-                        </h5>
+                        </h3>
+
                         <p class="text text-white">
                           After completing my degree, I continued experimenting,
                           fueled by my passion for learning and creating new
@@ -191,12 +234,14 @@
                   <img
                     src="./assets/img/water.jpg"
                     class="d-block vh-100 vw-100 object-cover"
-                    alt="Natural landscape, clear water"
+                    alt=""
                   />
+
                   <div class="carousel-caption d-none d-md-block">
-                    <h5 class="sub-title text-white">
+                    <h3 class="sub-title text-white">
                       My Journey Through Web Development
-                    </h5>
+                    </h3>
+
                     <p class="text text-white">
                       Initially, I built database-driven websites, fascinated by
                       data processing. Later, I focused on designing user
@@ -213,10 +258,12 @@
                   <img
                     src="./assets/img/montain.jpg"
                     class="d-block vh-100 vw-100 object-cover"
-                    alt="Mountain landscape"
+                    alt=""
                   />
+
                   <div class="carousel-caption d-none d-md-block">
-                    <h5 class="sub-title text-white">My Achievements</h5>
+                    <h3 class="sub-title text-white">My Achievements</h3>
+
                     <p class="text text-white">
                       I’ve developed dozens of templates, 15 JavaScript
                       applications, and 7 websites with databases. I’ve
@@ -234,11 +281,13 @@
                     <img
                       src="./assets/img/route.jpg"
                       class="d-block vh-100 vw-100 object-cover transposed"
-                      alt="Mountain path"
+                      alt=""
                     />
+
                     <div class="mask mask-dark">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="sub-title text-white">My Goal</h5>
+                        <h3 class="sub-title text-white">My Goal</h3>
+
                         <p class="text text-white">
                           My goal is to grow and learn continuously, as
                           perseverance and consistency are fundamental to
@@ -307,10 +356,12 @@
               <!-- Modal Header -->
               <div class="modal-header">
                 <h5 class="modal-title title" id="journey-label">My Journey</h5>
+
                 <button
                   type="button"
                   class="btn-close"
                   data-mdb-ripple-init
+                  data-mdb-ripple-color="dark"
                   data-mdb-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -332,6 +383,7 @@
                           <div class="bg-blue rounded-4 shadow-2-strong p-3">
                             <i
                               class="fa-solid fa-play text-white fa-lg fa-fw"
+                              aria-hidden="true"
                             ></i>
                           </div>
                         </div>
@@ -342,6 +394,7 @@
                           <h3 class="sub-title mb-1">
                             Passion for web development
                           </h3>
+
                           <p class="text mb-0">
                             It all started in October 2018 with an internship.
                             That’s when I decided to build a website for my
@@ -359,6 +412,7 @@
                           <div class="bg-blue rounded-4 shadow-2-strong p-3">
                             <i
                               class="fa-solid fa-code text-white fa-lg fa-fw"
+                              aria-hidden="true"
                             ></i>
                           </div>
                         </div>
@@ -367,6 +421,7 @@
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
                           <h3 class="sub-title mb-1">From hobby to career</h3>
+
                           <p class="text mb-0">
                             After completing my degree, I continued
                             experimenting, fueled by my passion for learning and
@@ -386,6 +441,7 @@
                           <div class="bg-blue rounded-4 shadow-2-strong p-3">
                             <i
                               class="fa-solid fa-plane text-white fa-lg fa-fw"
+                              aria-hidden="true"
                             ></i>
                           </div>
                         </div>
@@ -396,6 +452,7 @@
                           <h3 class="sub-title mb-1">
                             My Journey Through Web Development
                           </h3>
+
                           <p class="text mb-0">
                             Initially, I built database-driven websites,
                             fascinated by data processing. Later, I focused on
@@ -416,6 +473,7 @@
                           <div class="bg-blue rounded-4 shadow-2-strong p-3">
                             <i
                               class="fa-solid fa-trophy text-white fa-lg fa-fw"
+                              aria-hidden="true"
                             ></i>
                           </div>
                         </div>
@@ -424,6 +482,7 @@
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
                           <h3 class="sub-title mb-1">My Achievements</h3>
+
                           <p class="text mb-0">
                             I’ve developed dozens of templates, 15 JavaScript
                             applications, and 7 websites with databases. I’ve
@@ -443,6 +502,7 @@
                           <div class="bg-blue rounded-4 shadow-2-strong p-3">
                             <i
                               class="fa-solid fa-location-dot text-white fa-lg fa-fw"
+                              aria-hidden="true"
                             ></i>
                           </div>
                         </div>
@@ -451,6 +511,7 @@
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
                           <h3 class="sub-title mb-1">My Goal</h3>
+
                           <p class="text mb-0">
                             My goal is to grow and learn continuously, as
                             perseverance and consistency are fundamental to
@@ -470,8 +531,9 @@
                           class="btn btn-primary-blue btn-lg btn-rounded"
                           href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
                           target="_blank"
-                          role="button"
+                          rel="noopener noreferrer"
                           data-mdb-ripple-init
+                          data-mdb-ripple-color="light"
                           >Discover my progress</a
                         >
                       </div>
@@ -493,7 +555,6 @@
                   data-mdb-ripple-init
                   data-mdb-ripple-color="danger"
                   data-mdb-dismiss="modal"
-                  aria-label="Close"
                 >
                   Close
                 </button>
@@ -510,6 +571,7 @@
 
     <!--Main layout-->
     <main>
+      <!-- Container -->
       <div class="container-xxl px-lg-5 px-xxl-0 px-ultra-5">
         <!-- My Projects -->
         <section class="text-center mb-xl-10 mb-md-7 mb-5">
@@ -524,35 +586,49 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
                   <img
                     src="./assets/img/premierLeagueMagazin.png"
                     class="w-100"
-                    alt="Premier League Magazin screenshot"
+                    alt=""
                   />
-                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+
+                  <a
+                    href="#"
+                    role="button"
+                    data-mdb-modal-init
+                    data-mdb-target="#project-1"
+                    aria-label="Open details about project"
+                  >
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Premier League Magazin</h5>
-                  <h6 class="card-sub-title">2018-2019</h6>
+                  <h3 class="card-title">Premier League Magazin</h3>
+
+                  <h4 class="card-sub-title">2018-2019</h4>
+
                   <p class="card-text">
                     My first complex web application, built with PHP and MySQL
                     for the back-end and MDBootstrap 4 for the user interface.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/PremierLeagueMagazin"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -566,36 +642,46 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/liverpool.png"
-                    class="w-100"
-                    alt="Liverpool screenshot"
-                  />
-                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-2">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                  <img src="./assets/img/liverpool.png" class="w-100" alt="" />
+
+                  <a
+                    href="#"
+                    role="button"
+                    data-mdb-modal-init
+                    data-mdb-target="#project-2"
+                    aria-label="Open details about project"
+                  >
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Liverpool</h5>
-                  <h6 class="card-sub-title">2019-2022</h6>
+                  <h3 class="card-title">Liverpool</h3>
+
+                  <h4 class="card-sub-title">2019-2022</h4>
+
                   <p class="card-text">
                     My most complex website to date, featuring a robust back-end
                     built with PHP and MySQL, complemented by a beautiful user
                     interface using MDBootstrap 4.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/Liverpool"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -609,39 +695,45 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/newYear2024.png"
-                    class="w-100"
-                    alt="Happy New Year 2024 screenshot"
-                  />
+                  <img src="./assets/img/newYear2024.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/happy-new-year-2024/index.html"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Happy New Year 2024</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">Happy New Year 2024</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     A personal static website made public, built with
                     MDBootstrap 5 and SASS (mainly CSS), without any back-end
                     functionality.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/happy-new-year-2024?tab=readme-ov-file"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -655,39 +747,45 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/euro2024.png"
-                    class="w-100"
-                    alt="UEFA EURO 2024 screenshot"
-                  />
+                  <img src="./assets/img/euro2024.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/euro-2024/index.html"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">UEFA EURO 2024</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">UEFA EURO 2024</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     A static website that loads dynamic data from JSON files,
                     focusing on JavaScript, especially asynchronous functions
                     for data manipulation and display.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/euro-2024"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -701,38 +799,44 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/library.png"
-                    class="w-100"
-                    alt="Basic Library screenshot"
-                  />
+                  <img src="./assets/img/library.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/basic-library/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Basic Library</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">Basic Library</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     My first JavaScript app using classes and objects, focusing
                     on object-oriented programming (OOP) concepts.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/basic-library"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -746,39 +850,45 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/toDo.png"
-                    class="w-100"
-                    alt="Todo-list screenshot"
-                  />
+                  <img src="./assets/img/toDo.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/todo-list/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Todo List</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">Todo List</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     My first JavaScript app using ES modules and factory
                     functions, featuring the Web Storage API to store data in
                     the browser's memory.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/todo-list"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -792,38 +902,44 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/weatherApp.png"
-                    class="w-100"
-                    alt="Weather App screenshot"
-                  />
+                  <img src="./assets/img/weatherApp.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/weather-app/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Weather App</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">Weather App</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     My first JavaScript app using asynchronous functions and
                     APIs, developed with WeatherAPI.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/weather-app"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -837,38 +953,44 @@
               <!-- Card -->
               <div class="card h-100 rounded-6">
                 <div
-                  class="bg-image hover-overlay mx-3 mt-n3 shadow-4-strong rounded-6"
+                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
                   data-mdb-ripple-init
                   data-mdb-ripple-color="light"
                 >
-                  <img
-                    src="./assets/img/battleship.png"
-                    class="w-100"
-                    alt="Battleship screenshot"
-                  />
+                  <img src="./assets/img/battleship.png" class="w-100" alt="" />
+
                   <a
                     href="https://catalinbroinas.github.io/battleship/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Live Demo in a new tab"
                   >
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"
-                    ></div>
+                    <div class="mask mask-light"></div>
                   </a>
                 </div>
+
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Battleship</h5>
-                  <h6 class="card-sub-title">2024</h6>
+                  <h3 class="card-title">Battleship</h3>
+
+                  <h4 class="card-sub-title">2024</h4>
+
                   <p class="card-text">
                     A JavaScript app featuring unit testing with Jest, built to
                     simulate the classic Battleship game.
                   </p>
+
                   <a
                     href="https://github.com/catalinbroinas/battleship"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                   >
-                    <i class="fa-brands fa-github text-white fa-lg me-3"></i>
+                    <i
+                      class="fa-brands fa-github text-white fa-lg me-3"
+                      aria-hidden="true"
+                    ></i>
                     View code
                   </a>
                 </div>
@@ -880,6 +1002,7 @@
           <!-- Content -->
         </section>
         <!-- My Projects -->
+
         <!-- My Projects: modals -->
         <section>
           <!-- Modal 1 -->
@@ -898,10 +1021,12 @@
                   <h5 class="modal-title" id="project-1-label">
                     Project Screenshots
                   </h5>
+
                   <button
                     type="button"
                     class="btn-close"
                     data-mdb-ripple-init
+                    data-mdb-ripple-color="dark"
                     data-mdb-dismiss="modal"
                     aria-label="Close"
                   ></button>
@@ -915,7 +1040,10 @@
                     <!-- Note -->
                     <div class="row">
                       <div class="note note-info mb-4">
-                        <i class="fa-solid fa-circle-info me-2 text-info"></i>
+                        <i
+                          class="fa-solid fa-circle-info me-2 text-info"
+                          aria-hidden="true"
+                        ></i>
                         <strong>Important:</strong>
                         This project currently does not have a live demo
                         available. You can, however, explore the source code on
@@ -1031,7 +1159,6 @@
                     data-mdb-ripple-init
                     data-mdb-ripple-color="danger"
                     data-mdb-dismiss="modal"
-                    aria-label="Close"
                   >
                     Close
                   </button>
@@ -1041,6 +1168,7 @@
             </div>
           </div>
           <!-- Modal 1 -->
+
           <!-- Modal 2 -->
           <div
             class="modal fade"
@@ -1057,10 +1185,12 @@
                   <h5 class="modal-title" id="project-2-label">
                     Project Screenshots
                   </h5>
+
                   <button
                     type="button"
                     class="btn-close"
                     data-mdb-ripple-init
+                    data-mdb-ripple-color="dark"
                     data-mdb-dismiss="modal"
                     aria-label="Close"
                   ></button>
@@ -1074,7 +1204,10 @@
                     <!-- Note -->
                     <div class="row">
                       <div class="note note-info mb-4">
-                        <i class="fa-solid fa-circle-info me-2 text-info"></i>
+                        <i
+                          class="fa-solid fa-circle-info me-2 text-info"
+                          aria-hidden="true"
+                        ></i>
                         <strong>Important:</strong>
                         This project currently does not have a live demo
                         available. You can, however, explore the source code on
@@ -1220,7 +1353,6 @@
                     data-mdb-ripple-init
                     data-mdb-ripple-color="danger"
                     data-mdb-dismiss="modal"
-                    aria-label="Close"
                   >
                     Close
                   </button>
@@ -1232,6 +1364,7 @@
           <!-- Modal 2 -->
         </section>
         <!-- My Projects: modals -->
+
         <!-- About Me -->
         <section class="mb-xl-10 mb-md-7 mb-5">
           <!-- Grid Row -->
@@ -1243,16 +1376,19 @@
                 <!-- Card Body -->
                 <div class="card-body p-lg-5 shadow-5">
                   <h2 class="title mb-1">My Story</h2>
+
                   <h3 class="sub-title fs-5 mb-3">
                     I've always liked computers, but football fueled my passion
                     for web development.
                   </h3>
+
                   <p class="text mb-3">
                     My greatest passion is sports, especially football. From a
                     young age, I developed a strong love for mathematics and
                     computer science. I knew from my early teenage years that I
                     wanted to become a 'computer scientist.'
                   </p>
+
                   <p class="text mb-3">
                     In 2015, I enrolled in a specialized faculty (IETI,
                     Calculatoare), graduating in 2019. The latter part of 2018
@@ -1264,6 +1400,7 @@
                     the visual aspects more and more, which motivated me to
                     build more and more templates.
                   </p>
+
                   <p class="text">
                     Everything went well until the second half of 2021 when I
                     started to lose my way. The year 2022 was not a year of
@@ -1284,11 +1421,7 @@
             <div class="col-lg-6 col-sm-8 mb-5 mb-lg-0">
               <div class="bg-image hover-overlay rounded-7 shadow-4">
                 <!-- Image -->
-                <img
-                  src="./assets/img/my-photo.jpg"
-                  class="img-fluid"
-                  alt="My photo"
-                />
+                <img src="./assets/img/my-photo.jpg" class="img-fluid" alt="" />
 
                 <!-- Mask -->
                 <div class="mask mask-effect-1977"></div>
@@ -1299,6 +1432,7 @@
           <!-- Grid Row -->
         </section>
         <!-- About Me -->
+
         <!-- Technologies -->
         <section class="mb-xl-10 mb-md-7 mb-5">
           <h2 class="title text-center mb-xl-7 mb-5">Technologies Used</h2>
@@ -1310,7 +1444,8 @@
               <h3 class="sub-title text-center text-md-start mb-3">
                 Front-end
               </h3>
-              <hr class="hr m-0" />
+
+              <hr class="hr m-0" role="separator" aria-hidden="true" />
             </div>
             <!-- Title -->
 
@@ -1323,7 +1458,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-html5 color-blue fa-4x fa-fw mb-2"
-                    aria-label="HTML 5 icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1334,16 +1469,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">100+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">3000+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2014</span>
                     </li>
@@ -1365,7 +1509,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-css3-alt color-blue fa-4x fa-fw mb-2"
-                    aria-label="CSS 3 icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1376,16 +1520,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">100+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">2500+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2014</span>
                     </li>
@@ -1407,7 +1560,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-js color-blue fa-4x fa-fw mb-2"
-                    aria-label="Javascript icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1418,16 +1571,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">20+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">600+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2020</span>
                     </li>
@@ -1449,7 +1611,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-bootstrap color-blue fa-4x fa-fw mb-2"
-                    aria-label="Bootstrap icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1460,16 +1622,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">5+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">200+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2018</span>
                     </li>
@@ -1491,7 +1662,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-mdb color-blue fa-4x fa-fw mb-2"
-                    aria-label="MDBootstrap icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1502,16 +1673,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">50+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">1000+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2019</span>
                     </li>
@@ -1533,7 +1713,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-sass color-blue fa-4x fa-fw mb-2"
-                    aria-label="SASS icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1544,16 +1724,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">10+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">100+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2023</span>
                     </li>
@@ -1575,7 +1764,8 @@
               <h3 class="sub-title text-center text-md-start mb-3">
                 Back-end & Workflow
               </h3>
-              <hr class="hr m-0" />
+
+              <hr class="hr m-0" role="separator" aria-hidden="true" />
             </div>
             <!-- Title -->
 
@@ -1588,7 +1778,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-php color-blue fa-4x fa-fw mb-2"
-                    aria-label="Php icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1599,16 +1789,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">10+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">800+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2015</span>
                     </li>
@@ -1630,7 +1829,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-solid fa-database color-blue fa-4x fa-fw mb-2"
-                    aria-label="Database icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1641,16 +1840,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">7+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">100+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2015</span>
                     </li>
@@ -1672,7 +1880,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-git-alt color-blue fa-4x fa-fw mb-2"
-                    aria-label="Git icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1683,16 +1891,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">35+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">150+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2023</span>
                     </li>
@@ -1714,7 +1931,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-github color-blue fa-4x fa-fw mb-2"
-                    aria-label="GitHub icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1725,16 +1942,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">35+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">100+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2023</span>
                     </li>
@@ -1756,7 +1982,7 @@
                   <!-- Icon -->
                   <i
                     class="fa-brands fa-npm color-blue fa-4x fa-fw mb-2"
-                    aria-label="npm icon"
+                    aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
@@ -1767,16 +1993,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">7+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">50+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2024</span>
                     </li>
@@ -1798,7 +2033,8 @@
               <h3 class="sub-title text-center text-md-start mb-3">
                 Bundlers & APIs
               </h3>
-              <hr class="hr m-0" />
+
+              <hr class="hr m-0" role="separator" aria-hidden="true" />
             </div>
             <!-- Title -->
 
@@ -1811,7 +2047,7 @@
                   <!-- Icon -->
                   <img
                     src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23304FFE'%20width='800px'%20height='800px'%20viewBox='0%200%2024.00%2024.00'%20role='img'%20xmlns='http://www.w3.org/2000/svg'%20stroke='%23304FFE'%20stroke-width='0.00024000000000000003'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke='%23CCCCCC'%20stroke-width='0.192'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3ctitle%3eWebpack%20icon%3c/title%3e%3cpath%20d='M21.0157%2018.1202L12.351%2023v-3.8007l5.3986-2.9567%203.266%201.8776zm.5927-.5344V7.3805l-3.1708%201.822v6.5593l3.1708%201.824zm-18.6827.5344L11.5904%2023v-3.8007l-5.3986-2.9567-3.266%201.8776zm-.5927-.5344V7.3805l3.1707%201.822v6.5593l-3.1707%201.824zm.371-10.8656l8.8864-5.0056v3.6748L5.8974%208.507l-.0434.0248-3.15-1.8116zm18.5335%200L12.351%201.7146v3.6748l5.693%203.1177.0434.0248%203.15-1.8116zm-9.647%2011.6146l-5.3262-2.9155V9.642l5.326%203.062v5.6308zm.7605%200l5.326-2.9155V9.642l-5.326%203.062v5.6308zM6.625%208.9734l5.3467-2.928%205.3468%202.928-5.3468%203.0744L6.625%208.9734z'/%3e%3c/g%3e%3c/svg%3e"
-                    alt="Webapck icon"
+                    alt=""
                     class="technology-image"
                   />
 
@@ -1823,16 +2059,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">3+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">50+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2024</span>
                     </li>
@@ -1854,7 +2099,7 @@
                   <!-- Icon -->
                   <img
                     src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M14%2019H16C17.1046%2019%2018%2018.1046%2018%2017V14.5616C18%2013.6438%2018.6246%2012.8439%2019.5149%2012.6213L21.0299%2012.2425C21.2823%2012.1794%2021.2823%2011.8206%2021.0299%2011.7575L19.5149%2011.3787C18.6246%2011.1561%2018%2010.3562%2018%209.43845V5H14'%20stroke='%23304FFE'%20stroke-width='2'/%3e%3cpath%20d='M10%205H8C6.89543%205%206%205.89543%206%207V9.43845C6%2010.3562%205.37541%2011.1561%204.48507%2011.3787L2.97014%2011.7575C2.71765%2011.8206%202.71765%2012.1794%202.97014%2012.2425L4.48507%2012.6213C5.37541%2012.8439%206%2013.6438%206%2014.5616V19H10'%20stroke='%23304FFE'%20stroke-width='2'/%3e%3c/g%3e%3c/svg%3e"
-                    alt="JSON icon"
+                    alt=""
                     class="technology-image"
                   />
 
@@ -1866,16 +2111,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">2+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">20+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2024</span>
                     </li>
@@ -1897,7 +2151,7 @@
                   <!-- Icon -->
                   <img
                     src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20128%20128'%3e%3cpath%20fill='%23006bff'%20d='M128%203.83%2048.72%2022.547%2036.977%20124.17ZM39.464%2024.264%200%2033.167l35.658%2090.604Z'/%3e%3c/svg%3e"
-                    alt="Vite icon"
+                    alt=""
                     class="technology-image"
                   />
 
@@ -1909,16 +2163,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">2+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">10+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2024</span>
                     </li>
@@ -1940,7 +2203,7 @@
                   <!-- Icon -->
                   <img
                     src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20height='800px'%20width='800px'%20version='1.1'%20id='_x32_'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%20fill='%23000000'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23304FFE;}%20%3c/style%3e%3cg%3e%3cpath%20class='st0'%20d='M416.305,232.076c-0.056,0-0.094,0-0.131,0c0.056-1.594,0.131-3.178,0.131-4.791%20c0-76.637-62.136-138.762-138.771-138.762c-71.786,0-130.85,54.521-138.031,124.419c-10.066-3.113-20.755-4.791-31.841-4.791%20C48.207,208.152,0,256.354,0,315.814s48.207,107.662,107.662,107.662h308.643c52.843,0,95.695-42.842,95.695-95.704%20C512,274.919,469.148,232.076,416.305,232.076z%20M303.452,318.517c-5.648,24.903-30.41,40.522-55.318,34.874%20c-24.908-5.648-40.522-30.41-34.88-55.313c5.643-24.912,65.155-78.305,65.155-78.305S309.09,293.605,303.452,318.517z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
-                    alt="Weather API icon"
+                    alt=""
                     class="technology-image"
                   />
 
@@ -1952,16 +2215,25 @@
                     class="list-group list-group-light list-group-small text-start ps-3"
                   >
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-folder text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">1+ projects</span>
                     </li>
+
                     <li class="list-group-item border-0">
-                      <i class="fa-solid fa-clock text-secondary me-3"></i>
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
                       <span class="fw-bold">20+ hours</span>
                     </li>
+
                     <li class="list-group-item border-0">
                       <i
                         class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
                       ></i>
                       <span class="fw-bold">Start in 2024</span>
                     </li>
@@ -1977,6 +2249,7 @@
           <!-- Bundlers & APIs -->
         </section>
         <!-- Technologies -->
+
         <!-- Contact -->
         <section class="mb-xl-10 mb-md-7 mb-5">
           <h2 class="title text-center mb-xl-7 mb-5">Contact</h2>
@@ -1987,7 +2260,7 @@
           >
             <!-- First Column -->
             <div class="col-ultra-2 col-xxxl-3 col-lg-4 d-none d-lg-block">
-              <img src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20version='1.1'%20id='Uploaded%20to%20svgrepo.com'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='256px'%20height='256px'%20viewBox='0%200%2032.00%2032.00'%20xml:space='preserve'%20fill='%23000000'%20stroke='%23000000'%20stroke-width='0.00032'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke='%23CCCCCC'%20stroke-width='0.064'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cstyle%20type='text/css'%3e%20.puchipuchi_een{fill:%23304FFE;}%20%3c/style%3e%3cpath%20class='puchipuchi_een'%20d='M26,1H6C4.895,1,4,1.895,4,3H3C2.448,3,2,3.448,2,4s0.448,1,1,1h1v2H3C2.448,7,2,7.448,2,8%20s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1%20s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1c0,1.105,0.895,2,2,2h20%20c1.105,0,2-0.895,2-2V3C28,1.895,27.105,1,26,1z%20M16,7c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2s-2-0.895-2-2%20C14,7.895,14.895,7,16,7z%20M16,12c1.657,0,3,1.343,3,3c0,1.128-1.343,1-3,1s-3,0-3-1C13,13.343,14.343,12,16,12z%20M20,24h-8%20c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S20.552,24,20,24z%20M22,21H10c-0.552,0-1-0.448-1-1s0.448-1,1-1h12%20c0.552,0,1,0.448,1,1S22.552,21,22,21z'/%3e%3c/g%3e%3c/svg%3e" alt="A book" class="w-100" />
+              <img src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20version='1.1'%20id='Uploaded%20to%20svgrepo.com'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='256px'%20height='256px'%20viewBox='0%200%2032.00%2032.00'%20xml:space='preserve'%20fill='%23000000'%20stroke='%23000000'%20stroke-width='0.00032'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke='%23CCCCCC'%20stroke-width='0.064'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cstyle%20type='text/css'%3e%20.puchipuchi_een{fill:%23304FFE;}%20%3c/style%3e%3cpath%20class='puchipuchi_een'%20d='M26,1H6C4.895,1,4,1.895,4,3H3C2.448,3,2,3.448,2,4s0.448,1,1,1h1v2H3C2.448,7,2,7.448,2,8%20s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1%20s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1v2H3c-0.552,0-1,0.448-1,1s0.448,1,1,1h1c0,1.105,0.895,2,2,2h20%20c1.105,0,2-0.895,2-2V3C28,1.895,27.105,1,26,1z%20M16,7c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2s-2-0.895-2-2%20C14,7.895,14.895,7,16,7z%20M16,12c1.657,0,3,1.343,3,3c0,1.128-1.343,1-3,1s-3,0-3-1C13,13.343,14.343,12,16,12z%20M20,24h-8%20c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S20.552,24,20,24z%20M22,21H10c-0.552,0-1-0.448-1-1s0.448-1,1-1h12%20c0.552,0,1,0.448,1,1S22.552,21,22,21z'/%3e%3c/g%3e%3c/svg%3e" alt="" class="w-100" />
             </div>
             <!-- First Column -->
 
@@ -1999,6 +2272,7 @@
               <div class="d-flex align-items-center mb-md-5 mb-4">
                 <i
                   class="fa-solid fa-earth-americas color-blue fa-lg fa-fw me-md-5 me-3"
+                  aria-label="Country"
                 ></i>
                 <span class="font-title fs-5">Romania</span>
               </div>
@@ -2008,6 +2282,7 @@
               <div class="d-flex align-items-center mb-md-5 mb-4">
                 <i
                   class="fa-solid fa-location-dot color-blue fa-lg fa-fw me-md-5 me-3"
+                  aria-label="Location"
                 ></i>
                 <span class="font-title fs-5">Aleșd, Bihor</span>
               </div>
@@ -2017,6 +2292,7 @@
               <div class="d-flex align-items-center mb-md-5 mb-4">
                 <i
                   class="fa-solid fa-envelope color-blue fa-lg fa-fw me-md-5 me-3"
+                  aria-label="Email address"
                 ></i>
                 <span class="font-title fs-5">catalinbroinas@yahoo.com</span>
               </div>
@@ -2026,6 +2302,7 @@
               <div class="d-flex align-items-center mb-md-5 mb-4">
                 <i
                   class="fa-solid fa-phone color-blue fa-lg fa-fw me-md-5 me-3"
+                  aria-label="Phone number"
                 ></i>
                 <span class="font-title fs-5">+40 765 277 604</span>
               </div>
@@ -2036,10 +2313,12 @@
                 <!-- GitHub -->
                 <a
                   class="btn btn-gitHub me-sm-5 me-3"
-                  data-mdb-ripple-init
                   href="https://github.com/catalinbroinas"
                   target="_blank"
-                  role="button"
+                  rel="noopener noreferrer"
+                  aria-label="Open gitHub profile in a new tab"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
@@ -2047,10 +2326,12 @@
                 <!-- Facebook -->
                 <a
                   class="btn btn-facebook me-sm-5 me-3"
-                  data-mdb-ripple-init
                   href="https://www.facebook.com/broinas.catalin/"
                   target="_blank"
-                  role="button"
+                  rel="noopener noreferrer"
+                  aria-label="Open Facebook profile in a new tab"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
                 >
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -2063,20 +2344,13 @@
         </section>
         <!-- Contact -->
       </div>
+      <!-- Container -->
     </main>
     <!--Main layout-->
 
     <!--Footer-->
-    <footer>
-      <div class="footer text-center p-3">
-        © 2024 Copyright:
-        <a
-          class="footer-link"
-          href="https://github.com/catalinbroinas"
-          target="_blank"
-          >catalinbroinas</a
-        >
-      </div>
+    <footer class="bg-light-blue text-center p-3">
+      © 2024 Catalin Broinas. All rights reserved.
     </footer>
     <!--Footer-->
 
