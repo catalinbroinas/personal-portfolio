@@ -1605,7 +1605,15 @@
             <div class="col-lg-6 col-sm-8 mb-5 mb-lg-0">
               <div class="bg-image hover-overlay rounded-7 shadow-4">
                 <!-- Image -->
-                <img src="assets/img/my-photo.jpg" class="img-fluid" alt="" />
+                <picture>
+                  <source
+                    srcset="assets/img/my-photo-640.webp"
+                    type="image/webp"
+                    media="(max-width: 1400px)"
+                  />
+                  <source srcset="assets/img/my-photo.webp" type="image/webp" />
+                  <img src="assets/img/my-photo.png" class="img-fluid" alt="" />
+                </picture>
 
                 <!-- Mask -->
                 <div class="mask mask-effect-1977"></div>
