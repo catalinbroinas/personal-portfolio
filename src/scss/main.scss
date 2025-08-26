@@ -186,3 +186,8 @@ body {
 .transposed {
    transform: scaleX(-1);
 }
+
+.scroll-margin {
+   scroll-margin-top: 2rem;
+   scroll-behavior: smooth;
+}
