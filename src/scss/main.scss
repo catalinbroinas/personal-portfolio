@@ -51,6 +51,16 @@ body {
    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+.intro-title {
+   @include custom-text($font-title, 700, 4.5rem, $secondary-main);
+   text-transform: uppercase;
+}
+
+.intro-sub-title {
+   @include custom-text($font-title, 400, 3.5rem, $text-dark);
+   text-transform: capitalize;
+}
+
 // Intro
 .intro {
    .hr-intro {
