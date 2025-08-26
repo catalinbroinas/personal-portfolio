@@ -46,6 +46,11 @@ body {
    @include custom-text($font-text, 400, 1rem, $secondary-main);
 }
 
+.carousel .carousel-text {
+   color: $secondary-light;
+   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 // Intro
 .intro {
    .hr-intro {
