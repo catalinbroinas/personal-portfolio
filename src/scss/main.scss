@@ -107,6 +107,10 @@ body {
    @include btn-primary-blue;
 }
 
+.btn.btn-outline-primary-blue {
+   @include btn-outline-primary-blue;
+}
+
 .btn.btn-facebook {
    @include btn-facebook;
 }
