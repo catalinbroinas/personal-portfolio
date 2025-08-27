@@ -43,6 +43,24 @@
     }
 }
 
+@mixin btn-outline-primary-blue {
+    background-color: $primary-main;
+    color: $secondary-dark;
+    border-color: $secondary-dark;
+
+    &:visited {
+        background-color: $primary-main;
+        color: $secondary-dark;
+        border-color: $secondary-dark;
+    }
+
+   &:is(:hover, :focus, :active) {
+        background-color: $primary-light;
+        color: $secondary-dark;
+        border-color: $secondary-dark;
+    }
+}
+
 @mixin btn-social-media($bg-color) {
     background-color: $bg-color;
     color: white;
