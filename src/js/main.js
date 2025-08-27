@@ -31,9 +31,21 @@ function MainDomManager() {
         });
     };
 
+    const scrollToMyProjects = () => {
+        const seeMyProjects = document.querySelector('#see-projects-btn');
+        const sectionTarget = document.querySelector('#projects');
+
+        seeMyProjects.addEventListener('click', () => {
+            setTimeout(() => {
+                sectionTarget.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+        });
+    };
+
     const initApp = () => {
         initMDB({ Ripple, Carousel });
         setupCarousel();
+        scrollToMyProjects();
         initMDB({ Modal });
     };
 
