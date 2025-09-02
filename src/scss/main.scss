@@ -38,12 +38,16 @@ body {
 
 .card-title {
    @include custom-text($font-title, 700, 1.35rem, $secondary-dark);
+   margin-bottom: 0.25rem;
 }
-.card-sub-title {
-   @include custom-text($font-text, 600, 1.15rem, $secondary-main);
+.card-subtitle {
+   @include custom-text($font-text, 600, 1rem, $secondary-main);
+   margin-bottom: 0.75rem;
 }
 .card-text {
-   @include custom-text($font-text, 400, 1rem, $secondary-main);
+   @include custom-text($font-text, 400, 1rem, $text-dark);
+   line-height: 1.6rem;
+   margin-bottom: 1rem;
 }
 
 .carousel .carousel-text {
