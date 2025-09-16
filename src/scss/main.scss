@@ -23,31 +23,54 @@ body {
    font-family: $font-text;
 }
 
-.title
-{
+.title {
    @include title;
+   @include media-breakpoint-down(sm) {
+      font-size: 1.75rem;
+   }
 }
-.sub-title
-{
+
+.sub-title {
    @include sub-title;
+   @include media-breakpoint-down(sm) {
+      font-size: 1.25rem;
+   }
 }
-.text
-{
+
+.text {
    @include text;
+   @include media-breakpoint-down(sm) {
+      font-size: 0.95rem;
+   }
 }
 
 .card-title {
    @include custom-text($font-title, 700, 1.35rem, $secondary-dark);
    margin-bottom: 0.25rem;
+
+   @include media-breakpoint-down(sm) {
+      font-size: 1.15rem;
+   }
 }
+
 .card-subtitle {
    @include custom-text($font-text, 600, 1rem, $secondary-main);
    margin-bottom: 0.75rem;
+
+   @include media-breakpoint-down(sm) {
+      font-size: 0.95rem;
+   }
 }
+
 .card-text {
    @include custom-text($font-text, 400, 1rem, $text-dark);
    line-height: 1.6rem;
    margin-bottom: 1rem;
+
+   @include media-breakpoint-down(sm) {
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+   }
 }
 
 .carousel .carousel-text {
@@ -91,20 +114,36 @@ body {
 
 .about-title {
    @include custom-text($font-title, 700, 1.6rem, $secondary-dark);
+
+   @include media-breakpoint-down(sm) {
+      font-size: 1.35rem;
+   }
 }
 
 .about-subtitle {
    @include custom-text($font-text, 500, 1.2rem, $secondary-main);
+
+   @include media-breakpoint-down(sm) {
+      font-size: 1.1rem;
+   }
 }
 
 .about-text {
    @include text;
    line-height: 1.6rem;
+
+   @include media-breakpoint-down(sm) {
+      line-height: 1.5rem;
+   }
 }
 
 .contact-text {
    @include custom-text($font-title, 400, 1.25rem, $text-dark);
    transition: color 0.3s ease;
+
+   @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+   }
 }
 
 // Intro
