@@ -42,8 +42,8 @@ body {
    }
 }
 
-.sub-title {
-   @include sub-title;
+.subtitle {
+   @include subtitle;
    @include media-breakpoint-down(sm) {
       font-size: 1.25rem;
    }
@@ -100,7 +100,7 @@ body {
    @include responsive-font(4rem, 4rem, 4rem, 3.5rem, 2.75rem);
 }
 
-.intro-sub-title {
+.intro-subtitle {
    @include custom-text($font-title, 400, 3.5rem, $text-dark);
    text-transform: capitalize;
 
@@ -206,23 +206,24 @@ body {
    @include btn-facebook;
 }
 
- .btn.btn-instagram {
+.btn.btn-instagram {
    @include btn-instagram;
 }
 
- .btn.btn-linkedin {
+.btn.btn-linkedin {
    @include btn-linkedin;
 } 
 
- .btn.btn-gitHub {
+.btn.btn-github {
    @include btn-github;
 }
 
 // Icons
-.icon-gitHub {
+.icon-github {
    @include icon-github;
 }
- .icon-linkedin {
+
+.icon-linkedin {
    @include icon-linkedin;
 }
 

@@ -8,7 +8,7 @@
     font-size: $font-size;
 }
 
-@mixin sub-title($font-size: 1.5rem) {
+@mixin subtitle($font-size: 1.5rem) {
     font-family: $font-text;
     font-weight: 600;
     color: $secondary-main;
