@@ -45,7 +45,7 @@
 // COMPONENTS
 // =======================================
 // Buttons
-@mixin btn-primary-blue {
+@mixin btn-custom-primary {
     background-color: $primary-dark;
     color: white;
 
@@ -58,7 +58,7 @@
     }
 }
 
-@mixin btn-outline-primary-blue {
+@mixin btn-custom-outline-primary {
     background-color: $primary-main;
     color: $secondary-dark;
     border-color: $secondary-dark;
@@ -152,6 +152,10 @@
 // Masks
 @mixin mask-dark($opacity: 0.15) {
     background-color: rgba(0, 0, 0, $opacity);
+}
+
+@mixin mask-light($opacity: 0.15) {
+    background-color: rgba(251, 251, 251, $opacity);
 }
 
 // Effects

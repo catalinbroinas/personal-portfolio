@@ -59,6 +59,8 @@ body {
 // =======================================
 // INTRO SECTION
 // =======================================
+
+// Titles
 .intro-title {
    @include custom-text($font-title, 700, 4.5rem, $secondary-main);
    text-transform: uppercase;
@@ -75,52 +77,43 @@ body {
    @include responsive-font(3rem, 3rem, 3rem, 2.5rem, 2rem);
 }
 
-.carousel .carousel-text {
-   color: $secondary-light;
-   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-.intro {
-   .hr-intro {
-      height: 2px;
-      width: 200px;
-   }
-
-   .avatar-intro {
-      width: 200px;
-      height: 200px;
-   }
-
-   .custom-indicator {
+// Carousel
+.intro-carousel {
+   .intro-carousel-indicator {
       width: 12px;
       height: 12px;
       margin: 0 6px;
    }
 
-   .custom-border-radius {
+   .intro-carousel-inner {
       border-bottom-left-radius: 4rem;
    }
 
-   // Medium devices
-   @media only screen and (max-width: 991px) {
-      .custom-border-radius {
-         border-radius: 0;
-      }
+   .intro-carousel-text {
+      color: $secondary-light;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+   }
+}
+
+// Avatar
+.intro-avatar {
+   width: 200px;
+   height: 200px;
+
+   @include media-breakpoint-down(md) {
+      width: 150px;
+      height: 150px;
    }
 
-   // Small devices
-   @media only screen and (max-width: 767px) {
-      .avatar-intro {
-         width: 150px;
-         height: 150px;
-      }
+   @media (max-height: 499px) {
+      display: none;
    }
+}
 
-   @media only screen and (max-height: 499px) {
-      .avatar-intro {
-         display: none;
-      }
-   }
+// Decorative HR
+.intro-hr {
+   height: 2px;
+   width: 200px;
 }
 
 // =======================================
@@ -152,13 +145,6 @@ body {
    @include media-breakpoint-down(sm) {
       font-size: 0.95rem;
       line-height: 1.5rem;
-   }
-}
-
-.modal {
-   .custom-indicator {
-      width: 9px;
-      height: 9px;
    }
 }
 
@@ -198,7 +184,7 @@ body {
 // =======================================
 // TECHNOLOGIES SECTION
 // =======================================
-.card-technology {
+.technology-card {
    width: 240px;
 }
 
@@ -259,26 +245,19 @@ body {
 // =======================================
 // COMPONENTS
 // =======================================
+
 // Buttons
-.btn.btn-primary-blue {
-   @include btn-primary-blue;
+.btn.btn-custom-primary {
+   @include btn-custom-primary;
 }
 
-.btn.btn-outline-primary-blue {
-   @include btn-outline-primary-blue;
+.btn.btn-outline-primary.btn-custom-outline-primary {
+   @include btn-custom-outline-primary;
 }
 
 .btn.btn-facebook {
    @include btn-facebook;
 }
-
-.btn.btn-instagram {
-   @include btn-instagram;
-}
-
-.btn.btn-linkedin {
-   @include btn-linkedin;
-} 
 
 .btn.btn-github {
    @include btn-github;
@@ -289,13 +268,10 @@ body {
    @include icon-github;
 }
 
-.icon-linkedin {
-   @include icon-linkedin;
-}
-
 // =======================================
 // STYLES & UTILITIES
 // =======================================
+
 // Masks
 .mask-light-dark {
    @include linear-gradient-overlay;
@@ -310,20 +286,20 @@ body {
 }
 
 .mask-light {
-   background-color: rgba(251, 251, 251, 0.15);
+   @include mask-light;
 }
 
 // Colors
-.color-blue {
+.text-secondary-dark {
    color: $secondary-dark;
 }
 
-.bg-blue {
-   background-color: $secondary-dark;
+.bg-primary-light {
+   background-color: $primary-light;
 }
 
-.bg-light-blue {
-   background-color: $primary-light;
+.bg-secondary-dark {
+   background-color: $secondary-dark;
 }
 
 // Utilities
