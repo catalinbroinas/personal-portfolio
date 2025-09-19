@@ -29,6 +29,18 @@
     color: $color;
 }
 
+@mixin card-title {
+    @include custom-text($font-title, 700, 1.35rem, $secondary-dark);
+}
+
+@mixin card-subtitle {
+    @include custom-text($font-text, 600, 1rem, $secondary-main);
+}
+
+@mixin card-text {
+    @include custom-text($font-text, 400, 1rem, $text-dark);
+}
+
 // =======================================
 // COMPONENTS
 // =======================================
@@ -114,12 +126,7 @@
 // =======================================
 // STYLES & UTILITIES
 // =======================================
-// Masks
-@mixin mask-dark($opacity: 0.15) {
-    background-color: rgba(0, 0, 0, $opacity);
-}
-
-// Responsive fonts
+// Fonts
 @mixin responsive-font($font-xxl: inherit, $font-xl: inherit, $font-lg: inherit, $font-md: inherit, $font-sm: inherit) {
     @include media-breakpoint-down(xxl) {
         font-size: $font-xxl;
@@ -140,4 +147,35 @@
     @include media-breakpoint-down(sm) {
         font-size: $font-sm;
     }
+}
+
+// Masks
+@mixin mask-dark($opacity: 0.15) {
+    background-color: rgba(0, 0, 0, $opacity);
+}
+
+// Effects
+@mixin linear-gradient-overlay(
+    $color: #000,
+    $start: 0,
+    $end: 0.4,
+    $direction: to bottom
+) {
+    background: linear-gradient(
+    $direction,
+    rgba($color, $start),
+    rgba($color, $end)
+  );
+}
+
+@mixin glass-effect {
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+}
+
+@mixin effect-1977 {
+    backdrop-filter: contrast(110%) brightness(110%) saturate(130%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
+    mix-blend-mode: screen;
+    background: rgba(243, 106, 188, 0.3);
+    opacity: 1;
 }
