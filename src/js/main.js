@@ -44,10 +44,9 @@ function MainDomManager() {
     };
 
     const initApp = () => {
-        initMDB({ Ripple, Carousel });
+        initMDB({ Ripple, Carousel, Modal });
         setupCarousel();
         scrollToMyProjects();
-        initMDB({ Modal });
     };
 
     return { initApp };
