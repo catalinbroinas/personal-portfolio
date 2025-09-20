@@ -41,8 +41,13 @@ function MainDomManager() {
     const scrollToMyProjects = () => {
         const seeMyProjects = document.querySelector('#see-projects-btn');
         const sectionTarget = document.querySelector('#projects');
+        if (!seeMyProjects || !sectionTarget) {
+            console.error('Button or section are missing.');
+            return;
+        }
 
         seeMyProjects.addEventListener('click', () => {
+            // If modal is open, wait for modal to close before scroll
             setTimeout(() => {
                 sectionTarget.scrollIntoView({ behavior: 'smooth' });
             }, 500);
