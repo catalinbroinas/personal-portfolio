@@ -3,6 +3,7 @@ import '../scss/main.scss';
 import { Ripple, Carousel, Modal, initMDB, } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 function MainDomManager() {
+    // Stop the carousel when the user hovers over it
     const setupCarousel = () => {
         const introCarousel = document.querySelector('#intro-carousel');
         const carousel = new Carousel(introCarousel, {
