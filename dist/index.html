@@ -14,24 +14,11 @@
     />
     <title>Personal Portfolio</title>
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/img/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./assets/img/favicon.svg"
-    />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/img/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,8 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index.css">
+    <script type="module" crossorigin src="/assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index.css">
   </head>
   <body>
     <!--Main Navigation-->
@@ -58,21 +45,19 @@
               <div class="px-sm-5 px-3 text-center">
                 <picture>
                   <source
-                    srcset="./assets/img/my-avatar.webp"
+                    srcset="/assets/img/my-avatar.webp"
                     type="image/webp"
                   />
                   <img
-                    src="./assets/img/my-avatar.png"
-                    alt=""
-                    class="avatar-intro rounded-circle shadow-5-strong border border-5 border-white mb-4"
+                    src="/assets/img/my-avatar.png"
+                    alt="Photo of Cătălin Broinaș"
+                    class="intro-avatar rounded-circle shadow-5-strong border border-5 border-white mb-4"
                   />
                 </picture>
 
-                <h2 class="font-title display-4">Cătălin Broinaș</h2>
+                <h2 class="intro-subtitle mb-2">Cătălin Broinaș</h2>
 
-                <h1 class="font-title display-2 fw-bold text-uppercase">
-                  Web developer
-                </h1>
+                <h1 class="intro-title mb-2">Web developer</h1>
               </div>
             </div>
             <!-- Text -->
@@ -91,37 +76,39 @@
                   class="me-3"
                   aria-label="GitHub profile"
                 >
-                  <i class="fa-brands fa-github icon-gitHub fa-2x fa-fw"></i>
+                  <i class="fa-brands fa-github icon-github fa-2x fa-fw"></i>
                 </a>
               </div>
               <!-- Social Media -->
 
               <hr
-                class="hr hr-intro d-none d-xl-flex"
+                class="hr intro-hr d-none d-xl-flex"
                 role="separator"
                 aria-hidden="true"
               />
 
               <a
-                class="btn btn-primary-blue btn-lg btn-rounded d-none d-xl-inline-block"
-                href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
-                target="_blank"
-                rel="noopener noreferrer"
+                class="btn btn-custom-primary btn-lg btn-rounded d-none d-xl-inline-block"
+                role="button"
+                href="#projects"
                 data-mdb-ripple-init
                 data-mdb-ripple-color="light"
-                >Discover my progress</a
               >
+                See my projects
+                <i class="fa-solid fa-angle-down ms-2" aria-hidden="true"></i>
+              </a>
 
-              <a
-                class="btn btn-primary-blue btn-lg btn-rounded d-xl-none"
-                href="#story"
-                role="button"
+              <button
+                class="btn btn-custom-primary btn-lg btn-rounded d-xl-none"
+                type="button"
                 data-mdb-ripple-init
                 data-mdb-modal-init
                 data-mdb-target="#journey"
                 data-mdb-ripple-color="light"
-                >Discover my journey</a
               >
+                Discover my journey
+                <i class="fa-solid fa-book ms-2" aria-hidden="true"></i>
+              </button>
             </div>
             <!-- Call to action -->
           </div>
@@ -134,7 +121,7 @@
             <!-- Carousel wrapper -->
             <div
               id="intro-carousel"
-              class="carousel slide carousel-fade"
+              class="carousel intro-carousel slide carousel-fade"
               data-mdb-ride="carousel"
               data-mdb-carousel-init
             >
@@ -144,7 +131,7 @@
                   type="button"
                   data-mdb-target="#intro-carousel"
                   data-mdb-slide-to="0"
-                  class="rounded-circle custom-indicator active"
+                  class="rounded-circle intro-carousel-indicator active"
                   aria-current="true"
                   aria-label="Slide 1"
                 ></button>
@@ -152,46 +139,46 @@
                   type="button"
                   data-mdb-target="#intro-carousel"
                   data-mdb-slide-to="1"
-                  class="rounded-circle custom-indicator"
+                  class="rounded-circle intro-carousel-indicator"
                   aria-label="Slide 2"
                 ></button>
                 <button
                   type="button"
                   data-mdb-target="#intro-carousel"
                   data-mdb-slide-to="2"
-                  class="rounded-circle custom-indicator"
+                  class="rounded-circle intro-carousel-indicator"
                   aria-label="Slide 3"
                 ></button>
                 <button
                   type="button"
                   data-mdb-target="#intro-carousel"
                   data-mdb-slide-to="3"
-                  class="rounded-circle custom-indicator"
+                  class="rounded-circle intro-carousel-indicator"
                   aria-label="Slide 4"
                 ></button>
                 <button
                   type="button"
                   data-mdb-target="#intro-carousel"
                   data-mdb-slide-to="4"
-                  class="rounded-circle custom-indicator"
+                  class="rounded-circle intro-carousel-indicator"
                   aria-label="Slide 5"
                 ></button>
               </div>
               <!-- Indicators -->
 
               <!-- Inner -->
-              <div class="carousel-inner custom-border-radius shadow-5-strong">
+              <div class="carousel-inner intro-carousel-inner shadow-5-strong">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                   <div class="bg-image">
                     <picture>
                       <source
-                        srcset="./assets/img/laptop.webp"
+                        srcset="/assets/img/laptop.webp"
                         type="image/webp"
                         media="(min-width: 1200px)"
                       />
                       <img
-                        src="./assets/img/laptop_1.png"
+                        src="/assets/img/laptop_1.png"
                         class="d-block vh-100 vw-100 object-cover"
                         alt=""
                         loading="lazy"
@@ -199,12 +186,12 @@
                     </picture>
 
                     <div class="mask mask-light-dark">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3 class="sub-title text-white">
+                      <div class="carousel-caption">
+                        <h3 class="subtitle intro-carousel-text">
                           Passion for web development
                         </h3>
 
-                        <p class="text text-white">
+                        <p class="text intro-carousel-text">
                           It all started in October 2018 with an internship.
                           That’s when I decided to build a website for my
                           undergraduate project, and I did!
@@ -220,12 +207,12 @@
                   <div class="bg-image">
                     <picture>
                       <source
-                        srcset="./assets/img/road.webp"
+                        srcset="/assets/img/road.webp"
                         type="image/webp"
                         media="(min-width: 1200px)"
                       />
                       <img
-                        src="./assets/img/road_1.png"
+                        src="/assets/img/road_1.png"
                         class="d-block vh-100 vw-100 object-cover"
                         alt=""
                         loading="lazy"
@@ -233,12 +220,12 @@
                     </picture>
 
                     <div class="mask mask-light-dark">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3 class="sub-title text-white">
+                      <div class="carousel-caption">
+                        <h3 class="subtitle intro-carousel-text">
                           From hobby to career
                         </h3>
 
-                        <p class="text text-white">
+                        <p class="text intro-carousel-text">
                           After completing my degree, I continued experimenting,
                           fueled by my passion for learning and creating new
                           projects. In 2023, I finally realized that web
@@ -255,24 +242,24 @@
                 <div class="carousel-item">
                   <picture>
                     <source
-                      srcset="./assets/img/water.webp"
+                      srcset="/assets/img/water.webp"
                       type="image/webp"
                       media="(min-width: 1200px)"
                     />
                     <img
-                      src="./assets/img/water_1.png"
+                      src="/assets/img/water_1.png"
                       class="d-block vh-100 vw-100 object-cover"
                       alt=""
                       loading="lazy"
                     />
                   </picture>
 
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="sub-title text-white">
+                  <div class="carousel-caption">
+                    <h3 class="subtitle intro-carousel-text">
                       My Journey Through Web Development
                     </h3>
 
-                    <p class="text text-white">
+                    <p class="text intro-carousel-text">
                       Initially, I built database-driven websites, fascinated by
                       data processing. Later, I focused on designing user
                       interfaces that sparked my creativity. Through The Odin
@@ -287,27 +274,30 @@
                 <div class="carousel-item">
                   <picture>
                     <source
-                      srcset="./assets/img/montain.webp"
+                      srcset="/assets/img/montain.webp"
                       type="image/webp"
                       media="(min-width: 1200px)"
                     />
                     <img
-                      src="./assets/img/montain_1.png"
+                      src="/assets/img/montain_1.png"
                       class="d-block vh-100 vw-100 object-cover"
                       alt=""
                       loading="lazy"
                     />
                   </picture>
 
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="sub-title text-white">My Achievements</h3>
+                  <div class="carousel-caption">
+                    <h3 class="subtitle intro-carousel-text">
+                      My Achievements
+                    </h3>
 
-                    <p class="text text-white">
-                      I’ve developed dozens of templates, 15 JavaScript
-                      applications, and 7 websites with databases. I’ve
-                      published my most relevant projects on GitHub, excluding
-                      personal ones. Since September 2023, I’ve been using Git
-                      and GitHub daily.
+                    <p class="text intro-carousel-text">
+                      I’ve developed dozens of templates, 3 presentation
+                      websites, 16 JavaScript applications, 2 React applications
+                      and 7 database-driven websites. I’ve published my most
+                      relevant projects on GitHub, excluding personal ones.
+                      Since September 2023, I’ve been using Git and GitHub
+                      daily.
                     </p>
                   </div>
                 </div>
@@ -318,12 +308,12 @@
                   <div class="bg-image">
                     <picture>
                       <source
-                        srcset="./assets/img/route.webp"
+                        srcset="/assets/img/route.webp"
                         type="image/webp"
                         media="(min-width: 1200px)"
                       />
                       <img
-                        src="./assets/img/route_1.png"
+                        src="/assets/img/route_1.png"
                         class="d-block vh-100 vw-100 object-cover transposed"
                         alt=""
                         loading="lazy"
@@ -331,10 +321,10 @@
                     </picture>
 
                     <div class="mask mask-dark">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3 class="sub-title text-white">My Goal</h3>
+                      <div class="carousel-caption">
+                        <h3 class="subtitle intro-carousel-text">My Goal</h3>
 
-                        <p class="text text-white">
+                        <p class="text intro-carousel-text">
                           My goal is to grow and learn continuously, as
                           perseverance and consistency are fundamental to
                           success. I am looking to collaborate with a team where
@@ -426,7 +416,9 @@
                       <div class="d-flex align-items-start mb-5">
                         <!-- Icon -->
                         <div class="flex-shrink-0">
-                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                          <div
+                            class="bg-secondary-dark rounded-4 shadow-2-strong p-3"
+                          >
                             <i
                               class="fa-solid fa-play text-white fa-lg fa-fw"
                               aria-hidden="true"
@@ -437,7 +429,7 @@
 
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
-                          <h3 class="sub-title mb-1">
+                          <h3 class="subtitle mb-1">
                             Passion for web development
                           </h3>
 
@@ -455,7 +447,9 @@
                       <div class="d-flex align-items-start mb-5">
                         <!-- Icon -->
                         <div class="flex-shrink-0">
-                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                          <div
+                            class="bg-secondary-dark rounded-4 shadow-2-strong p-3"
+                          >
                             <i
                               class="fa-solid fa-code text-white fa-lg fa-fw"
                               aria-hidden="true"
@@ -466,7 +460,7 @@
 
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
-                          <h3 class="sub-title mb-1">From hobby to career</h3>
+                          <h3 class="subtitle mb-1">From hobby to career</h3>
 
                           <p class="text mb-0">
                             After completing my degree, I continued
@@ -484,7 +478,9 @@
                       <div class="d-flex align-items-start mb-5">
                         <!-- Icon -->
                         <div class="flex-shrink-0">
-                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                          <div
+                            class="bg-secondary-dark rounded-4 shadow-2-strong p-3"
+                          >
                             <i
                               class="fa-solid fa-plane text-white fa-lg fa-fw"
                               aria-hidden="true"
@@ -495,7 +491,7 @@
 
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
-                          <h3 class="sub-title mb-1">
+                          <h3 class="subtitle mb-1">
                             My Journey Through Web Development
                           </h3>
 
@@ -516,7 +512,9 @@
                       <div class="d-flex align-items-start mb-5">
                         <!-- Icon -->
                         <div class="flex-shrink-0">
-                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                          <div
+                            class="bg-secondary-dark rounded-4 shadow-2-strong p-3"
+                          >
                             <i
                               class="fa-solid fa-trophy text-white fa-lg fa-fw"
                               aria-hidden="true"
@@ -527,11 +525,12 @@
 
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
-                          <h3 class="sub-title mb-1">My Achievements</h3>
+                          <h3 class="subtitle mb-1">My Achievements</h3>
 
                           <p class="text mb-0">
-                            I’ve developed dozens of templates, 15 JavaScript
-                            applications, and 7 websites with databases. I’ve
+                            I’ve developed dozens of templates, 3 presentation
+                            websites, 16 JavaScript applications, 2 React
+                            applications and 7 database-driven websites. I’ve
                             published my most relevant projects on GitHub,
                             excluding personal ones. Since September 2023, I’ve
                             been using Git and GitHub daily.
@@ -545,7 +544,9 @@
                       <div class="d-flex align-items-start mb-5">
                         <!-- Icon -->
                         <div class="flex-shrink-0">
-                          <div class="bg-blue rounded-4 shadow-2-strong p-3">
+                          <div
+                            class="bg-secondary-dark rounded-4 shadow-2-strong p-3"
+                          >
                             <i
                               class="fa-solid fa-location-dot text-white fa-lg fa-fw"
                               aria-hidden="true"
@@ -556,7 +557,7 @@
 
                         <!-- Text -->
                         <div class="flex-grow-1 ms-4">
-                          <h3 class="sub-title mb-1">My Goal</h3>
+                          <h3 class="subtitle mb-1">My Goal</h3>
 
                           <p class="text mb-0">
                             My goal is to grow and learn continuously, as
@@ -573,15 +574,20 @@
 
                       <!-- CTA Button -->
                       <div class="text-center">
-                        <a
-                          class="btn btn-primary-blue btn-lg btn-rounded"
-                          href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          id="see-projects-btn"
+                          class="btn btn-custom-primary btn-lg btn-rounded"
+                          type="button"
                           data-mdb-ripple-init
                           data-mdb-ripple-color="light"
-                          >Discover my progress</a
+                          data-mdb-dismiss="modal"
                         >
+                          See my projects
+                          <i
+                            class="fa-solid fa-angle-down ms-2"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
                       </div>
                       <!-- CTA Button -->
                     </div>
@@ -620,14 +626,17 @@
       <!-- Container -->
       <div class="container-xxl px-lg-5 px-xxl-0 px-ultra-5">
         <!-- My Projects -->
-        <section class="text-center mb-xl-10 mb-md-7 mb-5">
-          <h2 class="title text-center mb-xl-7 mb-5">My Projects</h2>
+        <section
+          id="projects"
+          class="scroll-margin text-center mb-xl-10 mb-md-7 mb-5"
+        >
+          <h2 class="title text-center mb-xl-7 mb-5">My projects</h2>
 
           <!-- Content -->
           <div
-            class="row row-cols-xxxl-4 row-cols-xl-3 row-cols-md-2 row-cols-1 gx-xl-5 gy-5"
+            class="row row-cols-xl-3 row-cols-md-2 row-cols-1 gx-xl-5 gy-5 mb-5"
           >
-            <!-- Premier League Magazin -->
+            <!-- Column 1 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -638,11 +647,11 @@
                 >
                   <picture>
                     <source
-                      srcset="./assets/img/premierLeagueMagazin.webp"
+                      srcset="/assets/img/premierLeagueMagazin.webp"
                       type="image/webp"
                     />
                     <img
-                      src="./assets/img/premierLeagueMagazin.png"
+                      src="/assets/img/premierLeagueMagazin.png"
                       class="w-100"
                       alt=""
                     />
@@ -662,7 +671,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">Premier League Magazin</h3>
 
-                  <h4 class="card-sub-title">2018-2019</h4>
+                  <h4 class="card-subtitle">2018-2019</h4>
 
                   <p class="card-text">
                     My first complex web application, built with PHP and MySQL
@@ -673,7 +682,7 @@
                     href="https://github.com/catalinbroinas/PremierLeagueMagazin"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -687,9 +696,9 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- Premier League Magazin -->
+            <!-- Column 1 -->
 
-            <!-- Liverpool -->
+            <!-- Column 2 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -700,10 +709,14 @@
                 >
                   <picture>
                     <source
-                      srcset="./assets/img/liverpool.webp"
+                      srcset="/assets/img/liverpool.webp"
                       type="image/webp"
                     />
-                    <img src="./assets/img/liverpool.png" class="w-100" alt="" />
+                    <img
+                      src="/assets/img/liverpool.png"
+                      class="w-100"
+                      alt=""
+                    />
                   </picture>
 
                   <a
@@ -720,7 +733,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">Liverpool</h3>
 
-                  <h4 class="card-sub-title">2019-2022</h4>
+                  <h4 class="card-subtitle">2019-2022</h4>
 
                   <p class="card-text">
                     My most complex website to date, featuring a robust back-end
@@ -732,7 +745,7 @@
                     href="https://github.com/catalinbroinas/Liverpool"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -746,9 +759,9 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- Liverpool -->
+            <!-- Column 2 -->
 
-            <!-- Happy New Year -->
+            <!-- Column 3 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -759,72 +772,14 @@
                 >
                   <picture>
                     <source
-                      srcset="./assets/img/newYear2024.webp"
+                      srcset="/assets/img/euro2024.webp"
                       type="image/webp"
                     />
                     <img
-                      src="./assets/img/newYear2024.png"
+                      src="/assets/img/euro2024.png"
                       class="w-100"
                       alt=""
                     />
-                  </picture>
-
-                  <a
-                    href="https://catalinbroinas.github.io/happy-new-year-2024/index.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open Live Demo in a new tab"
-                  >
-                    <div class="mask mask-light"></div>
-                  </a>
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title">Happy New Year 2024</h3>
-
-                  <h4 class="card-sub-title">2024</h4>
-
-                  <p class="card-text">
-                    A personal static website made public, built with
-                    MDBootstrap 5 and SASS (mainly CSS), without any back-end
-                    functionality.
-                  </p>
-
-                  <a
-                    href="https://github.com/catalinbroinas/happy-new-year-2024?tab=readme-ov-file"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
-                    data-mdb-ripple-init
-                    data-mdb-ripple-color="light"
-                  >
-                    <i
-                      class="fa-brands fa-github text-white fa-lg me-3"
-                      aria-hidden="true"
-                    ></i>
-                    View code
-                  </a>
-                </div>
-              </div>
-              <!-- Card -->
-            </div>
-            <!-- Happy New Year -->
-
-            <!-- UEFA EURO -->
-            <div class="col">
-              <!-- Card -->
-              <div class="card h-100 rounded-6">
-                <div
-                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
-                  data-mdb-ripple-init
-                  data-mdb-ripple-color="light"
-                >
-                  <picture>
-                    <source
-                      srcset="./assets/img/euro2024.webp"
-                      type="image/webp"
-                    />
-                    <img src="./assets/img/euro2024.png" class="w-100" alt="" />
                   </picture>
 
                   <a
@@ -840,7 +795,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">UEFA EURO 2024</h3>
 
-                  <h4 class="card-sub-title">2024</h4>
+                  <h4 class="card-subtitle">2024</h4>
 
                   <p class="card-text">
                     A static website that loads dynamic data from JSON files,
@@ -852,7 +807,7 @@
                     href="https://github.com/catalinbroinas/euro-2024"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -866,9 +821,9 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- UEFA EURO -->
+            <!-- Column 3 -->
 
-            <!-- Library -->
+            <!-- Column 4 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -879,64 +834,14 @@
                 >
                   <picture>
                     <source
-                      srcset="data:image/webp;base64,UklGRnAJAABXRUJQVlA4IGQJAAAwTQCdASoAAiABPpFIoEulpCMio3FYwLASCWlu4XHDMmICw2CmqH2+9cz+nPW5ABZSfW7uFx/c/TFnyuHSTguBKkVcuD7j/j/YA8WbQm9eeweIk781oTug8AerTqIcWd+fcFCUQzLcrMoEE88OW32ivaB6iuHsKZrcWH+3WYGBxwex0Qk+rnhlzdXx1b1kf2iP0t71Mx9y1EOLNX1LzxJqRIaQUFplTGeJgL9evv8WwLI0wfQxUPaqsuAY7IZFly2+4KPuWkX7GNN9yuEh73ToYcm0prZzms+15YAGHLfnPR0V1xKZRFhR9y1EOLN8hKOtQsRTKgoNtymuGfmDx63iWFXkbW616VUusyPVO83XsC2AlDkPuWoqAoSGK5dgoiDwM8e2VJCMHfCi2mGtUm32m7g7wqBxvCqdYScZ3copSgS3kYzJP1CZeYpDN6RLkSJmWZqzAwvK0gMzIpHCHLUQ4s8DevtwQJJ8LmO0lITrUWWt/eBJVJnwFhWkK9H49y6aYVoFnfn3BSINQtUuA5rHjW3skg1sBQl2ekxX5N/YfaT8f5xgot7eiH3LUQ4r8luP91Pcgxp7aPJXC6+kj4cDjRVht6xJRSSzhszKQiH3LUQ4s7rUDYWO3KH+EZcKlS60OHTsS5Zcv4nTWa1Lb7go+5abfEMTkkb5fd3d3atwnYJJiowvZPzTwjFvj447KrxjZQRBXoUfctRDizvz7go+5aiHFnfn3BR9y1EOLO/PuCj7lqIcWd+fcFH3LUQ4s78+4KPuWohxZ359wUfctRDizvz7go+5aiHFnfn3BR9y1EOLO/PuCj7lqIcWd+fcFH14AAD++tkfBqVHmN89u/WTytoUTcnyrqq9VApwYvKHVpUYX/aIL5ZqLTM8mZ3niFx/JhPJGVZCoRVwqEVY+hd86afebNx6mtvPBN8ZoccHViog71dDcdOLbMtgubQM7oIq9VDVWFTv6XRNDU/fgtd6AYjA8sFLsfQJZqUkwNaqeCG6CKvVQJXmoxv0ZnEEzccmxbmR7ChaBfg5wCNgd6annRQ+tFeTX2me2L7c5p2Xb0YQ8b6gddqYIPhn1sS8c+HI6aLCNc+EDoIWaEA4bb1z0E8kmeJOqIUWpre7lvGy9FzS4MYM6Rd2TUUHviT49wFNDOmWz+y2704aZD99JKmCPKEWSY4GWHvV3tS67ckYtMD75yhxmbEW2k7yQYlAnJocaK1BdHsckdNeXkxiwMQzCQZamGgboPQAyhKa1W/gMY1SA2R8T+f73fJ2u0dLabxtSWToiusc2zVxDGlu/VuTx2Sm+oFGhpQRX7ljCEGuLNGcsukhDr6PKcTgAD7fg8WxmpVKhbE8LEpCI3CC6Yw2TJnhGnbkaqn26JTHvrN9+oDaN6L/qhTXhKa7/W5B+07gv1Ww+3ZIpSpqwMRjqDvSs8aKUib3AED7tFQ0zk1JyIp9/Bc2DMn4Tt5jwNCM3I55PM/xrqGk1LNyEwBV+YK/uDS+F/2h4rU8VCXV1unKgAyO17xI5brL98xvh1cPS61zxWMkXgINhaMq1/myFVFPpaApSIyHudG+pi8yJX4kVxtKn+NTbtKClfKXPFALe38926WOfI1gATqDpLOss49JnZCyDgHC2y2zCimJ9s6harbreC+jDiPSYTxiZox+amgp7slzbt1uLYeABGO1QV7Nbf6QV2mhLmCa5ypMDDpo7Xh8NshGBHW/0/W7+j/SFAyDtUOTNEfqnR+JH8fxj+zHWC3NEpv3XO9bpg+Q7Y/h/TJz7dbek5+BbavmzvK5QMOlDdDW0pXxgxp8QQfidBNVyfMFYTDph4b3yWpzO6/mSWDYKyDOfufJT/gwdtVTalpv8hh0ccqvXQrE2ZcL/8DWv7Rn+NGnJorbTbMX8zQQHul6hEfPnd8g8g9PeGMP2nvmcFuI3sFraSyJJasXaFYNaQC3IutVQYZaRth8b3aw8/ybLtFLq6zG8/NWi6AqD8PgVFCxqM0aZi/XzoX4yPjHJaYqmwbbPLfYsvS2fEG4YcK25WSXEFZjU63x+E0zH1TkVWE0k8sYxrUuKwxn/iWKkpHxxAo19HnQeYae1aFBK92ZGea3vkdvmk2eVd3ARrB8vsswkeIJ9TfZKg2sVxKJBdjkTwHwLeeAbgdvqFjSc/X6HBOeknkLqvO9GyHGuzGhWp9g6nRpafNhCTSZF0r5P5bncHnMqdCUB1uaC/K2bvdVVpFvYj26pIWIasqybtC2L+VEA7nG+dRYDbo/zplDvhlo/exBQFfYrWsTiHOXiLxT2Hb9hShQs3M8zqJdS4VIqweOvreue3L3bsWJJOHNLJjCXvDw2URSfG+IYPBznfzVQierSlWLLmiVr12LXlSi7JBox68jv33wmkoGEguC/6PeGySBgQA8kjvcZj3nWZP4k7qX3vzI1kaqSSgEGXf4pvtNOleKNWDwRe+sPl2X5oRNtKye2tHDmtfwBohfMD4Cz+kbe2AUfrQKb9nHBsbxUu0JbvQKKShHrFGLANVqozqujoL5TpijH11QSYuLTY5gA9xdRWfFFZdPGg8jF7l0zADUoiYscDBK2izsJFiKr8cs3rsvzszNPoG1ta16bsDdBQhCG0P2tQhYPJ34y+mMtcppUK+GEbnJmYtbwcL3U+ElUdZdUuDnS2MZCSZYY8UlyqXb020bU6AaxAWmg3j3ItCXqDQVdUKo1HY6WjVs8mxsdjF9wrP/6Tg1DWkvIObAbZbIzWDFAMF9rv2f+U5TpRjvvMUiJhQDFuKD0Jnf33yrxq3D488GSex60kNpDkOoTZt1F/+hdV4RmRySqvaPgKW5NsrfcLVNF5+ere1mZSzXg7fZZBxIWkvWa6ytkHYv/PaILt1xBG6vv3TP8oOhb/JhagBkthk1f4lmSuGeQsW1F3EyNa2HVFQXUuYwYvlG4fXswdUbxsIjS9ryo2KjM8B196vc7V8ABQog2K38oTxYbBr2l+XksqytjloYPe7tx1K5G41LW1sKbsprQZ76cSK5mH/KxbbEff2oNjW9pld6DZQdHZPjWl8eLJOdIfYvBBEyDzeZpeBDIXsOOZ50/aMaBeSrtF50yEeXeA7LvqDAWl9W45T2hL+Uf3zAHvgmFSHggZ7K17oTb8rj19/GFKxu0djHO05akiqMfdoMeyEhgxTaaKybNBUq71k9hfg8Nj6rSAAAAAAAAAAAAAAAAAAA"
+                      srcset="data:image/webp;base64,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"
                       type="image/webp"
                     />
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAEgCAMAAAD14jtjAAAAV1BMVEVRfI2Xl5f///+ZmZmIkZj19fYfW4Pp8O77/Pzi4uKUlJXIyMiysrIKEBM+a4KkpKRmjJszmNsoO0JJWmBjgY+y1u665Mtwb252hIyNjIxAnt2WnqVrtubcuqsNAAAMYElEQVR42uydjWKiOBRGEUmTmAhTQjdQff/n3HuDiradbWdXkiz5ri1IZJc693jyQ8BqHy2aCvHDaOJlpYp3qN2AzP4sht0mAYACMhRAVANAAfkJIKoBoID8BBAVACggPwHENQAUkJ0A4gIABWQngMgGgAJyE0BkAKCA3AQQ2wBQQGYCiA0AFJCZAKIbAArISwDRAYAC8hJAfANAAVkJID4AUEBWAkhgACggJwEkAAAKyEkAKQwABWQkgBQAQAEZCSCJAaCAfASQBAAoIB8BpDEAFJCNANIAAAVkI4BEBoACchFAIgBWUkB7PLb3m+2yXMrax4L7Xeent1VbgABSGWAdBfTHY/+AQx/K2ocyiv5Tapf/rp93p5W7/59tVQCpAFhHAe4h2bR1pNR+LOv7/nNmec8HANo+LgCpBJDMAM9XAOXLta3rj+4OgJY/8q6nTLrwsW85qWFBO3JJSysXDDDvUF14cQGAgAoRwxu8u+MS3q93GxFAMgCer4Ce3R4WCxFHx4uWoZg/2W7epw1PZj5o5Sjt18/7rQpw8749O6QPMBznYzAsz5ZDMgGkM8DTFdAfL9Hf6vs+ZJDT3Ldz8dwGuPDAzqCn3HQ83mqK4x0A/eU1KnHMQxX0EtbtRgSQDoCnK+ATAPOntudk8QfcXcqqS1YDISGT/T0A/QMA1W1XjvlFd9yQABIa4NkK+AoAxw2AWfiXtt0VgE8GuCb1owFmd/ShmpgBCM2KrQggIQDPVoC7ENAvjcD+mur2ioW7MnLXBrgl1y0cuVsbILxW9XPTYdbDY8/y/y2AlAZ4eiuAm+rubkSHUOgvrftr36DlJn1A5LEXQPu1MzlhB2r19y0VXHoBIem9C6XXemQjAkgJwApjAW37kwGC/3qQ/sk1QEoBJDVAtDMC7pmVdnvckgCSAhDtpGDrnllnuyd3AZMKIK0BcFIwuQDSAoB5AckFkNgAUEBqASQGAApILYDUBoACEgsgNQDFKyC1AJIboHQFpBZAcgAKV0ByAaQ3QNkKSC6A9AAUrYD0AsjAACUrIL0AMgAgjgLaP44yBJCDAWIooH3542iLEEAOAMRQQJYA5CCALAwQQQEv/yKKEEAWAERQQI4GyEIAeRhgfQUsaR3HIaxfqJnXti/hUd1+eTOWAbIQQB4ArK+A9i7/Ez9pqmEY2qGi9Qs9rfg5PYYZjxgGyEMAmRhgdQUsAmjGaQZhJACqaWiql4qfvxAF9NtEAyAPAWQCwOoKuBlg4DwHv/Mnvh3pMRuAfUB/RDu0cQDIRAC5GGBtBSxtgHap5D89ayP2AjIRQC4ArK2A7HoBuQggGwOsrICX3ADIRQDZALCyAnIzQDYCyMcA6yogNwCyEUA+AKytgKzOBuYjgIwMUNK8gHwEkBEABU0NykgAORmgHAVkJICcAChGATkJICsDlKKAnASQFQCFKCArAeQwLXyJMhTQPL7n0gHoHuJXAfH4jgsHYNdpcR+ygHh4w7rbFQ6AqDnU5beUuL1fAQDqogMAAAAAAAAAAAAAAAAAAKwU0mpeaaPmhaJtbT7s0nXmrhtiNADYDgBdP1BulfGCcu9VLZxX3Rj6YUSD4rVx4+iIifDX0MKfagEANgKA8DunazuOXnajDwD01o6iGzs9yT0vCACtvZGH8ST0NHbCn7punXEJrbUEAFEBMM74Tjuzd/RsIgCkP/hptI4e3jrfjao2vXNO70bt7dTQYqStteojKwBAVAD2vXfeOGk8+d8GAMzUj53rJtM5752tZwM046meGm+pAlgPAG0e2hcAYHUApLeSJTB5Rzn2AYA37Ubj95PU/enAqQ5tAGv93puOFtqfduM6VQCfAAAAUQEg5SqjtTVGhQVtUaVvamONElaHzkHoBQhlqH8QFkZLK8poBO7SRqRxAFXfn21Sn1/7tGOkU1MEQNooBICcB4IAAAAoF4ADAIABAAAMAABgAAAAAwAAGAAAwAAAoFgDKD5RIqXU0dOg9TxMrwUASGgAJSj/PFwvCYOYqVDWKKmkodBKa6G1VgDgGek9HJpv4vSQaKNZAoYZiAlAOOicf14YKyUAeEb+m+/jdwBEdXHIuuTsEwX8J8S7SmnLABz+HABSvw4peJw3tXYSjFKXj78IBFI9AAPEEcAHANQyUTP6lYLqMkF0XsAASQBAN3BDABwAAAD4NwA8yl+Jm5/nOuJa8uT4evBBAYD4AOy9kMtFOtqG1c7IifYUk6SSNS7bod6//KLwq1IAsCoA0jtje9NNujsc9p3p9NSp2p+M07vGuKkzJ+ftZNWzDSDoIXkMiBeCttkKUl5KxUrdEgDwEQDr/GjcfrTeNW7vOu87I2rfu94c3MlZP/mx8e6knm4ALTXHvKTtmnMubkUKAEQBwDtPWQ4AWG/8FQCriQa3CwBMDb345GpAmmv65TXllHyll0AVEAUA0UnVmUOoAkj/nbFUBYjaatGZ6WD2kzXW7Oz05Cv3lDSsfc13cLpVAYpo4C0ukBIARO4Gqoe1Uuu2yhOcggQAGAcAAA8AqNh37LvNQ4gb96caAcA9AH9FjksiwpmgmCEAQG5VgFIRf1AFoA0AAAAAAAAAAAAAAAAAAAAAAAAAAABgHpILo3OxodAm5iRkAPDbkUBKhBFSS1rImk/FhRNxSsiV08MT0elYSmoh6HD68U5uACAaAIZPwfKVOfp+4HT9z+d8lOWoWgKANADIWofrgsKvMEZRMni18jgwZVzxMS8HNwZVQJo2gL5enRcuEAvJ0Lrm63VWNoDkE0J2Tn/4I2CANL0AIZUSQtFDCP4g0qYSRqqV88GzTRQ1N/jiYDokHQ9XBqXvBsrLNEwRrYGuEvQFAADGAYoCYAw/9yEBQEkAVMNYPRQMHwGQYun2h7o/0r0aeBxAax4KWK+KEZ8HGIozQMUIVONAy6GtvgCAbxEg+Q4dPEOQkiK0iHK/jvmwfEXAiowZ/fGtFNcGqKqpGmcMhuorA1wnTtYhGderdWKMB2vFs0NXvDeE+DAhtEgAKOvVMFTz4x8BCP9c1wt1IlQBSofBZwEDrArAOHA1EBwwDLT961MbgL9gna/M48txKB1q3lq9CzjbRqwJW7j0qHQAvu0GLjeICaMzuo51uxh1GRBac7xJfXorAEB8O0aHbmDJAGAcoCQARORIfdxSAKAG//gw/setv2Eu2WEksAAABu75VSMvqflPPYFrP7AafgGA7QPAI39VYCCkPQwH8jaXNjgZtH0A+AwQD/7yz8i9/5GD6gAqgAHQCAQAAAAAAAAAAAAAAAAAAAAAAGwEAHxfQPEGmABA2Qb4CQH7tQEQuv7RfX61DJPCxHIvesF3kpMA4D8R8G2sDoDx9eHEM0uVEDzhUwglleaFnG8Sz7MPldDe1MZMdj/565WBlH0p/wIA/4mAb2P1KsD0B3fq/DTZyXpva7uzu70f7agHpfzYeW8mZyffm7pr+lFqdwNA8r0rAcC6hKz+3cF6BsBZ57veN7UmCpweR2+cUN54/vYJNzo2wK6hxcHWdwAIALBydDGqgMZ5J12j3WT4Cwkkpd9S0skAb50/WeemcaQP/p4aLarTCwBKoApYWwFdlEag5u8EplaekbXwp5pbelxUU1sg3IdAS76BL++nlhnIEo3ALRjgOq3wMs+41lYuxf885fCrWbwA4P9mAIwDlG4AAAADAAAYAADAAAAABgAAMAAAKNkA6u0HoQDAZg3w9vp9vL8BgM0a4CcAvAKAzRpA/QaAdwBQmAHOnPLz+fX9zI+3t3cO2gYAZRjgLN/eqa5/O3Ob73zmJ+HpOwAowwCU7/fX86XRfz7f2v9nAFBIG4AzHaw//3BFEAIAlNwLeEcjsNReALqBxRjg/fX9U7yGx7IFALY7Eqj09yPBWgCA7Z4L+ME4f9xbE8IAOBsIAwAAGAAAFGsAqYoOWToAe1t47AsH4CdXEG86dqUDgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgPi7XToWAAAAABjkbz2JncWQAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAALwCj2GJgUBjJo5AAAAAElFTkSuQmCC" class="w-100" alt="" />
-                  </picture>
-
-                  <a
-                    href="https://catalinbroinas.github.io/basic-library/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open Live Demo in a new tab"
-                  >
-                    <div class="mask mask-light"></div>
-                  </a>
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title">Basic Library</h3>
-
-                  <h4 class="card-sub-title">2024</h4>
-
-                  <p class="card-text">
-                    My first JavaScript app using classes and objects, focusing
-                    on object-oriented programming (OOP) concepts.
-                  </p>
-
-                  <a
-                    href="https://github.com/catalinbroinas/basic-library"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
-                    data-mdb-ripple-init
-                    data-mdb-ripple-color="light"
-                  >
-                    <i
-                      class="fa-brands fa-github text-white fa-lg me-3"
-                      aria-hidden="true"
-                    ></i>
-                    View code
-                  </a>
-                </div>
-              </div>
-              <!-- Card -->
-            </div>
-            <!-- Library -->
-
-            <!-- Todo List -->
-            <div class="col">
-              <!-- Card -->
-              <div class="card h-100 rounded-6">
-                <div
-                  class="bg-image hover-overlay shadow-4-strong rounded-6 mx-3 mt-n3"
-                  data-mdb-ripple-init
-                  data-mdb-ripple-color="light"
-                >
-                  <picture>
-                    <source srcset="data:image/webp;base64,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" type="image/webp" />
-                    <img src="./assets/img/toDo.png" class="w-100" alt="" />
+                    <img
+                      src="/assets/img/toDo.png"
+                      class="w-100"
+                      alt=""
+                    />
                   </picture>
 
                   <a
@@ -952,7 +857,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">Todo List</h3>
 
-                  <h4 class="card-sub-title">2024</h4>
+                  <h4 class="card-subtitle">2024</h4>
 
                   <p class="card-text">
                     My first JavaScript app using ES modules and factory
@@ -964,7 +869,7 @@
                     href="https://github.com/catalinbroinas/todo-list"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -978,9 +883,9 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- Todo List -->
+            <!-- Column 4 -->
 
-            <!-- Weather App -->
+            <!-- Column 5 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -994,7 +899,11 @@
                       srcset="data:image/webp;base64,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"
                       type="image/webp"
                     />
-                    <img src="./assets/img/weatherApp.png" class="w-100" alt="" />
+                    <img
+                      src="/assets/img/weatherApp.png"
+                      class="w-100"
+                      alt=""
+                    />
                   </picture>
 
                   <a
@@ -1010,7 +919,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">Weather App</h3>
 
-                  <h4 class="card-sub-title">2024</h4>
+                  <h4 class="card-subtitle">2024</h4>
 
                   <p class="card-text">
                     My first JavaScript app using asynchronous functions and
@@ -1021,7 +930,7 @@
                     href="https://github.com/catalinbroinas/weather-app"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -1035,9 +944,9 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- Weather App -->
+            <!-- Column 5 -->
 
-            <!-- Battleship -->
+            <!-- Column 6 -->
             <div class="col">
               <!-- Card -->
               <div class="card h-100 rounded-6">
@@ -1048,10 +957,14 @@
                 >
                   <picture>
                     <source
-                      srcset="./assets/img/battleship.webp"
+                      srcset="/assets/img/battleship.webp"
                       type="image/webp"
                     />
-                    <img src="data:image/png;base64,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" class="w-100" alt="" />
+                    <img
+                      src="data:image/png;base64,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"
+                      class="w-100"
+                      alt=""
+                    />
                   </picture>
 
                   <a
@@ -1067,7 +980,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title">Battleship</h3>
 
-                  <h4 class="card-sub-title">2024</h4>
+                  <h4 class="card-subtitle">2024</h4>
 
                   <p class="card-text">
                     A JavaScript app featuring unit testing with Jest, built to
@@ -1078,7 +991,7 @@
                     href="https://github.com/catalinbroinas/battleship"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="btn btn-primary-blue btn-rounded mt-auto align-self-center"
+                    class="btn btn-custom-primary btn-rounded mt-auto align-self-center"
                     data-mdb-ripple-init
                     data-mdb-ripple-color="light"
                   >
@@ -1092,9 +1005,28 @@
               </div>
               <!-- Card -->
             </div>
-            <!-- Battleship -->
+            <!-- Column 6 -->
           </div>
           <!-- Content -->
+
+          <!-- CTA Button -->
+          <div class="text-center">
+            <a
+              href="https://catalinbroinas.github.io/journey-of-a-web-developer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-primary btn-outline btn-custom-outline-primary btn-lg btn-rounded"
+              aria-label="Go to my progress website (external link)"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="#304FFE"
+              >Discover my progress
+              <i
+                class="fa-solid fa-arrow-up-right-from-square ms-2"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+          <!-- CTA Button -->
         </section>
         <!-- My Projects -->
 
@@ -1162,11 +1094,11 @@
                           <div class="carousel-item active">
                             <picture>
                               <source
-                                srcset="./assets/img/project-1-screenshot-1.webp"
+                                srcset="/assets/img/project-1-screenshot-1.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-1-screenshot-1.png"
+                                src="/assets/img/project-1-screenshot-1.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1179,11 +1111,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-1-screenshot-2.webp"
+                                srcset="/assets/img/project-1-screenshot-2.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-1-screenshot-2.png"
+                                src="/assets/img/project-1-screenshot-2.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1196,11 +1128,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-1-screenshot-3.webp"
+                                srcset="/assets/img/project-1-screenshot-3.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-1-screenshot-3.png"
+                                src="/assets/img/project-1-screenshot-3.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1213,11 +1145,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-1-screenshot-4.webp"
+                                srcset="/assets/img/project-1-screenshot-4.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-1-screenshot-4.png"
+                                src="/assets/img/project-1-screenshot-4.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1230,11 +1162,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-1-screenshot-5.webp"
+                                srcset="/assets/img/project-1-screenshot-5.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-1-screenshot-5.png"
+                                src="/assets/img/project-1-screenshot-5.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1361,11 +1293,11 @@
                           <div class="carousel-item active">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-1.webp"
+                                srcset="/assets/img/project-2-screenshot-1.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-1.png"
+                                src="/assets/img/project-2-screenshot-1.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1378,11 +1310,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-2.webp"
+                                srcset="/assets/img/project-2-screenshot-2.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-2.png"
+                                src="/assets/img/project-2-screenshot-2.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1395,11 +1327,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-3.webp"
+                                srcset="/assets/img/project-2-screenshot-3.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-3.png"
+                                src="/assets/img/project-2-screenshot-3.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1412,11 +1344,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-4.webp"
+                                srcset="/assets/img/project-2-screenshot-4.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-4.png"
+                                src="/assets/img/project-2-screenshot-4.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1429,11 +1361,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-5.webp"
+                                srcset="/assets/img/project-2-screenshot-5.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-5.png"
+                                src="/assets/img/project-2-screenshot-5.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1446,11 +1378,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-6.webp"
+                                srcset="/assets/img/project-2-screenshot-6.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-6.png"
+                                src="/assets/img/project-2-screenshot-6.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1463,11 +1395,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-7.webp"
+                                srcset="/assets/img/project-2-screenshot-7.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-7.png"
+                                src="/assets/img/project-2-screenshot-7.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1480,11 +1412,11 @@
                           <div class="carousel-item">
                             <picture>
                               <source
-                                srcset="./assets/img/project-2-screenshot-8.webp"
+                                srcset="/assets/img/project-2-screenshot-8.webp"
                                 type="image/webp"
                               />
                               <img
-                                src="./assets/img/project-2-screenshot-8.png"
+                                src="/assets/img/project-2-screenshot-8.png"
                                 class="d-block w-100"
                                 loading="lazy"
                                 alt="Project screenshot"
@@ -1553,6 +1485,8 @@
 
         <!-- About Me -->
         <section class="mb-xl-10 mb-md-7 mb-5">
+          <h2 class="title text-center mb-xl-7 mb-5">About me</h2>
+
           <!-- Grid Row -->
           <div class="row gx-0 justify-content-center align-items-center">
             <!-- First column -->
@@ -1561,21 +1495,21 @@
               <div class="card card-ice rounded-7 me-lg-n5">
                 <!-- Card Body -->
                 <div class="card-body p-lg-5 shadow-5">
-                  <h2 class="title mb-1">My Story</h2>
+                  <h2 class="about-title mb-2">My Story</h2>
 
-                  <h3 class="sub-title fs-5 mb-3">
+                  <h3 class="about-subtitle mb-3">
                     I've always liked computers, but football fueled my passion
                     for web development.
                   </h3>
 
-                  <p class="text mb-3">
+                  <p class="about-text mb-3">
                     My greatest passion is sports, especially football. From a
                     young age, I developed a strong love for mathematics and
                     computer science. I knew from my early teenage years that I
                     wanted to become a 'computer scientist.'
                   </p>
 
-                  <p class="text mb-3">
+                  <p class="about-text mb-3">
                     In 2015, I enrolled in a specialized faculty (IETI,
                     Calculatoare), graduating in 2019. The latter part of 2018
                     was pivotal in my journey, as it solidified my decision to
@@ -1587,7 +1521,7 @@
                     build more and more templates.
                   </p>
 
-                  <p class="text">
+                  <p class="about-text mb-0">
                     Everything went well until the second half of 2021 when I
                     started to lose my way. The year 2022 was not a year of
                     progress, but it helped me rediscover myself and understand
@@ -1609,12 +1543,19 @@
                 <!-- Image -->
                 <picture>
                   <source
-                    srcset="./assets/img/my-photo-640.webp"
+                    srcset="/assets/img/my-photo-640.webp"
                     type="image/webp"
                     media="(max-width: 1400px)"
                   />
-                  <source srcset="./assets/img/my-photo.webp" type="image/webp" />
-                  <img src="./assets/img/my-photo.png" class="img-fluid" alt="" />
+                  <source
+                    srcset="/assets/img/my-photo.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/assets/img/my-photo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                 </picture>
 
                 <!-- Mask -->
@@ -1629,15 +1570,13 @@
 
         <!-- Technologies -->
         <section class="mb-xl-10 mb-md-7 mb-5">
-          <h2 class="title text-center mb-xl-7 mb-5">Technologies Used</h2>
+          <h2 class="title text-center mb-xl-7 mb-5">Technologies & Tools</h2>
 
           <!-- Front-end -->
           <div class="row g-4 g-ultra-5 px-lg-3 px-md-5 mb-xl-7 mb-5 mx-0">
             <!-- Title -->
             <div class="col-12">
-              <h3 class="sub-title text-center text-md-start mb-3">
-                Front-end
-              </h3>
+              <h3 class="subtitle text-center text-md-start mb-3">Front-end</h3>
 
               <hr class="hr m-0" role="separator" aria-hidden="true" />
             </div>
@@ -1646,17 +1585,17 @@
             <!-- HTML -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-html5 color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-html5 text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">HTML 5</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">HTML 5</h4>
 
                   <!-- List -->
                   <ul
@@ -1697,17 +1636,17 @@
             <!-- CSS -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-css3-alt color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-css3-alt text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">CSS 3</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">CSS 3</h4>
 
                   <!-- List -->
                   <ul
@@ -1748,17 +1687,17 @@
             <!-- Javascript -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-js color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-js text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">Javascript</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">Javascript</h4>
 
                   <!-- List -->
                   <ul
@@ -1799,17 +1738,17 @@
             <!-- Bootstrap -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-bootstrap color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-bootstrap text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">Bootstrap</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">Bootstrap</h4>
 
                   <!-- List -->
                   <ul
@@ -1850,17 +1789,17 @@
             <!-- MDBootstrap -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-mdb color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-mdb text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">MDBootstrap</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">MDBootstrap</h4>
 
                   <!-- List -->
                   <ul
@@ -1901,17 +1840,17 @@
             <!-- SASS -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-sass color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-sass text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">SASS</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">SASS</h4>
 
                   <!-- List -->
                   <ul
@@ -1948,6 +1887,57 @@
               <!-- Card -->
             </div>
             <!-- SASS -->
+
+            <!-- React -->
+            <div class="col-lg-auto col-md-5 col-sm-6 col-12">
+              <!-- Card -->
+              <div class="card technology-card h-100 mx-auto">
+                <!-- Card Body -->
+                <div class="card-body text-center">
+                  <!-- Icon -->
+                  <i
+                    class="fa-brands fa-react text-secondary-dark fa-4x fa-fw mb-2"
+                    aria-hidden="true"
+                  ></i>
+
+                  <!-- Title -->
+                  <h4 class="subtitle text-secondary-dark mb-3">React</h4>
+
+                  <!-- List -->
+                  <ul
+                    class="list-group list-group-light list-group-small text-start ps-3"
+                  >
+                    <li class="list-group-item border-0">
+                      <i
+                        class="fa-solid fa-folder text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="fw-bold">4+ projects</span>
+                    </li>
+
+                    <li class="list-group-item border-0">
+                      <i
+                        class="fa-solid fa-clock text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="fw-bold">100+ hours</span>
+                    </li>
+
+                    <li class="list-group-item border-0">
+                      <i
+                        class="fa-solid fa-calendar-check text-secondary me-3"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="fw-bold">Start in 2025</span>
+                    </li>
+                  </ul>
+                  <!-- List -->
+                </div>
+                <!-- Card Body -->
+              </div>
+              <!-- Card -->
+            </div>
+            <!-- React -->
           </div>
           <!-- Front-end -->
 
@@ -1955,7 +1945,7 @@
           <div class="row g-4 g-ultra-5 px-lg-3 px-md-5 mb-xl-7 mb-5 mx-0">
             <!-- Title -->
             <div class="col-12">
-              <h3 class="sub-title text-center text-md-start mb-3">
+              <h3 class="subtitle text-center text-md-start mb-3">
                 Back-end & Workflow
               </h3>
 
@@ -1966,17 +1956,17 @@
             <!-- php -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-php color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-php text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">php</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">php</h4>
 
                   <!-- List -->
                   <ul
@@ -2017,17 +2007,17 @@
             <!-- MySQL -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-solid fa-database color-blue fa-4x fa-fw mb-2"
+                    class="fa-solid fa-database text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">MySQL</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">MySQL</h4>
 
                   <!-- List -->
                   <ul
@@ -2068,17 +2058,17 @@
             <!-- git -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-git-alt color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-git-alt text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">git</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">git</h4>
 
                   <!-- List -->
                   <ul
@@ -2119,17 +2109,17 @@
             <!-- gitHub -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-github color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-github text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">gitHub</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">gitHub</h4>
 
                   <!-- List -->
                   <ul
@@ -2170,17 +2160,17 @@
             <!-- npm -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
                   <i
-                    class="fa-brands fa-npm color-blue fa-4x fa-fw mb-2"
+                    class="fa-brands fa-npm text-secondary-dark fa-4x fa-fw mb-2"
                     aria-hidden="true"
                   ></i>
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">npm</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">npm</h4>
 
                   <!-- List -->
                   <ul
@@ -2224,7 +2214,7 @@
           <div class="row g-4 g-ultra-5 px-lg-3 px-md-5 mb-xl-7 mb-5 mx-0">
             <!-- Title -->
             <div class="col-12">
-              <h3 class="sub-title text-center text-md-start mb-3">
+              <h3 class="subtitle text-center text-md-start mb-3">
                 Bundlers & APIs
               </h3>
 
@@ -2235,7 +2225,7 @@
             <!-- Webpack -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
@@ -2246,7 +2236,7 @@
                   />
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">Webpack</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">Webpack</h4>
 
                   <!-- List -->
                   <ul
@@ -2287,7 +2277,7 @@
             <!-- JSON -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
@@ -2298,7 +2288,7 @@
                   />
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">JSON</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">JSON</h4>
 
                   <!-- List -->
                   <ul
@@ -2339,7 +2329,7 @@
             <!-- Vite -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
@@ -2350,7 +2340,7 @@
                   />
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">Vite</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">Vite</h4>
 
                   <!-- List -->
                   <ul
@@ -2391,7 +2381,7 @@
             <!-- Weather Api -->
             <div class="col-lg-auto col-md-5 col-sm-6 col-12">
               <!-- Card -->
-              <div class="card card-technology h-100 mx-auto">
+              <div class="card technology-card h-100 mx-auto">
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <!-- Icon -->
@@ -2402,7 +2392,7 @@
                   />
 
                   <!-- Title -->
-                  <h4 class="sub-title text-muted mb-3">Weather API</h4>
+                  <h4 class="subtitle text-secondary-dark mb-3">Weather API</h4>
 
                   <!-- List -->
                   <ul
@@ -2446,7 +2436,7 @@
 
         <!-- Contact -->
         <section class="mb-xl-10 mb-md-7 mb-5">
-          <h2 class="title text-center mb-xl-7 mb-5">Contact</h2>
+          <h2 class="title text-center mb-xl-7 mb-5">Contact me</h2>
 
           <!-- Grid Row -->
           <div
@@ -2467,40 +2457,52 @@
                 <!-- Country -->
                 <div class="d-flex align-items-center mb-md-5 mb-4">
                   <i
-                    class="fa-solid fa-earth-americas color-blue fa-lg fa-fw me-md-5 me-3"
+                    class="fa-solid fa-earth-americas contact-icon"
                     aria-label="Country"
                   ></i>
-                  <span class="font-title fs-5">Romania</span>
+                  <span class="contact-text">Romania</span>
                 </div>
                 <!-- Country -->
 
                 <!-- Location -->
                 <div class="d-flex align-items-center mb-md-5 mb-4">
                   <i
-                    class="fa-solid fa-location-dot color-blue fa-lg fa-fw me-md-5 me-3"
+                    class="fa-solid fa-location-dot contact-icon"
                     aria-label="Location"
                   ></i>
-                  <span class="font-title fs-5">Aleșd, Bihor</span>
+                  <span class="contact-text">Aleșd, Bihor</span>
                 </div>
                 <!-- Location -->
 
                 <!-- Email -->
                 <div class="d-flex align-items-center mb-md-5 mb-4">
-                  <i
-                    class="fa-solid fa-envelope color-blue fa-lg fa-fw me-md-5 me-3"
-                    aria-label="Email address"
-                  ></i>
-                  <span class="font-title fs-5">catalinbroinas@yahoo.com</span>
+                  <a
+                    href="mailto:catalinbroinas@yahoo.com"
+                    class="contact-link"
+                    aria-label="Send an email to catalinbroinas@yahoo.com"
+                  >
+                    <i
+                      class="fa-solid fa-envelope contact-icon"
+                      aria-label="Email address"
+                    ></i>
+                    <span class="contact-text">catalinbroinas@yahoo.com</span>
+                  </a>
                 </div>
                 <!-- Email -->
 
                 <!-- Phone -->
                 <div class="d-flex align-items-center mb-md-5 mb-4">
-                  <i
-                    class="fa-solid fa-phone color-blue fa-lg fa-fw me-md-5 me-3"
-                    aria-label="Phone number"
-                  ></i>
-                  <span class="font-title fs-5">+40 765 277 604</span>
+                  <a
+                    href="tel:+40765277604"
+                    class="contact-link"
+                    aria-label="Call 0765 277 604"
+                  >
+                    <i
+                      class="fa-solid fa-phone contact-icon"
+                      aria-label="Phone number"
+                    ></i>
+                    <span class="contact-text">+40 765 277 604</span>
+                  </a>
                 </div>
                 <!-- Phone -->
 
@@ -2508,7 +2510,7 @@
                 <div class="d-flex align-items-center m-0">
                   <!-- GitHub -->
                   <a
-                    class="btn btn-gitHub me-sm-5 me-3"
+                    class="btn btn-github me-sm-5 me-3"
                     href="https://github.com/catalinbroinas"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -2547,8 +2549,8 @@
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="bg-light-blue text-center p-3">
-      © 2024 Catalin Broinas. All rights reserved.
+    <footer class="bg-primary-light text-center p-3">
+      © 2024-2025 Catalin Broinas. All rights reserved.
     </footer>
     <!--Footer-->
 
