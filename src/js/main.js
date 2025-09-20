@@ -20,7 +20,7 @@ function MainDomManager() {
         return { introCarousel, next, prev };
     };
 
-    // Stop the carousel when the user hovers over it
+    // Pause carousel on hover
     const setupCarousel = () => {
         const elements = getCarouselElements();
         if (!elements) return;
@@ -47,7 +47,7 @@ function MainDomManager() {
         }
 
         seeMyProjects.addEventListener('click', () => {
-            // If modal is open, wait for modal to close before scroll
+            // If modal is open, wait before scrolling
             setTimeout(() => {
                 sectionTarget.scrollIntoView({ behavior: 'smooth' });
             }, 500);
