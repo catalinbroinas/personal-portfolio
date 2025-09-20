@@ -9,8 +9,8 @@
 @import 'custom-bootstrap';
 @import 'utilities-api.scss';
 
-// MDBootstrap
-@import 'mdb-ui-kit/src/scss/mdb.free.scss';
+// MDB custom imports
+@import 'mdb-overrides';
 
 // Body
 html {
