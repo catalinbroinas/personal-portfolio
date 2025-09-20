@@ -12,12 +12,12 @@ export default {
         rollupOptions: {
             output: {
                 assetFileNames: (assetInfo) => {
-                    if (/\.(ico|png|jpe?g|JPG|gif|svg|webp)$/.test(assetInfo.name)) {
+                    if (/\.(ico|png|jpe?g|gif|svg|webp)$/i.test(assetInfo.name)) {
                         return 'assets/img/[name].[ext]';
                     }
                     return 'assets/[name].[ext]';
                 },
-                chunkFileNames: 'assets/[name].[ext]',
+                chunkFileNames: 'assets/[name].js',
                 entryFileNames: 'assets/[name].js',
             },
         },
